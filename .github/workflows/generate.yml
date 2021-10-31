@@ -1,4 +1,4 @@
-name: CI
+name: Generate
 
 on:
   workflow_dispatch:
@@ -21,6 +21,14 @@ jobs:
       - run: make convert
       - run: make build
       - run: make copy
+      - name: Get version
+        run: VERSION=$(grep -oP 'OOUI \Kv.*' dist/resources/ooui/oojs-ui-core-dye.css)
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
+        with:
+          commit-message: Generate $VERSION
+          title: Generate $VERSION
+          body: ""
+          delete-branch: true
+          branch: generate
       
