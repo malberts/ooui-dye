@@ -9,5 +9,8 @@ else
     cd oojs-ui
 fi
 
+# Use only the latest tag.
+git checkout $(git describe --tags `git rev-list --tags --max-count=1`)
+
 npm install
 composer install
