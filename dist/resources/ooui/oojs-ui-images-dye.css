@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.41.3
+ * OOUI v0.42.0
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-10-31T15:06:24Z
+ * Date: 2021-10-31T15:41:37Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -331,6 +331,15 @@
 .oo-ui-image-progressive.oo-ui-icon-robot {
   background-image: /* @embed */ url(themes/dye/images/icons/robot-progressive.svg);
 }
+.oo-ui-icon-share {
+  background-image: /* @embed */ url(themes/dye/images/icons/share.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-share {
+  background-image: /* @embed */ url(themes/dye/images/icons/share-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-share {
+  background-image: /* @embed */ url(themes/dye/images/icons/share-progressive.svg);
+}
 .oo-ui-icon-specialPages {
   background-image: /* @embed */ url(themes/dye/images/icons/specialPages-ltr.svg);
 }
@@ -552,6 +561,9 @@
 }
 .oo-ui-icon-close {
   background-image: /* @embed */ url(themes/dye/images/icons/close.svg);
+}
+.oo-ui-image-destructive.oo-ui-icon-close {
+  background-image: /* @embed */ url(themes/dye/images/icons/close-destructive.svg);
 }
 .oo-ui-image-invert.oo-ui-icon-close {
   background-image: /* @embed */ url(themes/dye/images/icons/close-invert.svg);
@@ -2218,6 +2230,15 @@
 .oo-ui-image-progressive.oo-ui-icon-noWikiText {
   background-image: /* @embed */ url(themes/dye/images/icons/noWikiText-progressive.svg);
 }
+.oo-ui-icon-ocr {
+  background-image: /* @embed */ url(themes/dye/images/icons/ocr.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-ocr {
+  background-image: /* @embed */ url(themes/dye/images/icons/ocr-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-ocr {
+  background-image: /* @embed */ url(themes/dye/images/icons/ocr-progressive.svg);
+}
 .oo-ui-icon-outline {
   background-image: /* @embed */ url(themes/dye/images/icons/outline-ltr.svg);
 }
@@ -2244,6 +2265,15 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-quotes {
   background-image: /* @embed */ url(themes/dye/images/icons/quotes-ltr-progressive.svg);
+}
+.oo-ui-icon-sandbox {
+  background-image: /* @embed */ url(themes/dye/images/icons/sandbox.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-sandbox {
+  background-image: /* @embed */ url(themes/dye/images/icons/sandbox-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-sandbox {
+  background-image: /* @embed */ url(themes/dye/images/icons/sandbox-progressive.svg);
 }
 .oo-ui-icon-searchCaseSensitive {
   background-image: /* @embed */ url(themes/dye/images/icons/searchCaseSensitive.svg);

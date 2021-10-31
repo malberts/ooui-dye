@@ -52,7 +52,9 @@
 			"file": "images/icons/clock.svg"
 		},
 		"close": {
-			"file": "images/icons/close.svg"
+			"file": "images/icons/close.svg",
+			"variants": [ "destructive" ],
+			"deprecated": "The 'destructive' variant is deprecated since version 0.42.1."
 		},
 		"ellipsis": {
 			"file": "images/icons/ellipsis.svg"
