@@ -19,6 +19,10 @@ sed -Ei 's|@([^:]*):(\s*)rgba[^;]*;|@\1:\2var( --ooui-\1 );|g' $base/dye-ui-base
 sed -Ei 's|@([^:]*):(\s*)#([a-z0-9]+);|@\1:\2var( --\1 );|g' $base/common.less
 
 # Unusable: mix()
+# v0.39.3
+sed -i 's|mix( @color-progressive--active, @background-color-filled--disabled, 35% )|var( --color-primary--active--disabled )|g' $base/elements.less
+sed -i 's|mix( @color-progressive--active, @background-color-filled--disabled, 35% )|var( --color-primary--active--disabled )|g' $base/tools.less
+# v0.40.0
 sed -i 's|mix( @color-primary--active, @background-color-filled--disabled, 35% )|var( --color-primary--active--disabled )|g' $base/elements.less
 sed -i 's|mix( @color-primary--active, @background-color-filled--disabled, 35% )|var( --color-primary--active--disabled )|g' $base/tools.less
 
