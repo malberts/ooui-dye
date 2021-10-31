@@ -1,13 +1,15 @@
 /*!
- * OOUI v0.40.4
+ * OOUI v0.41.3
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-10-31T15:00:17Z
+ * Date: 2021-10-31T15:06:24Z
  */
+/* stylelint-disable selector-no-vendor-prefix */
+/* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-icon-add {
   background-image: /* @embed */ url(themes/dye/images/icons/add.svg);
 }
@@ -247,6 +249,24 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-logOut {
   background-image: /* @embed */ url(themes/dye/images/icons/logOut-rtl-progressive.svg);
+}
+.oo-ui-icon-network {
+  background-image: /* @embed */ url(themes/dye/images/icons/network.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-network {
+  background-image: /* @embed */ url(themes/dye/images/icons/network-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-network {
+  background-image: /* @embed */ url(themes/dye/images/icons/network-progressive.svg);
+}
+.oo-ui-icon-networkOff {
+  background-image: /* @embed */ url(themes/dye/images/icons/networkOff.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-networkOff {
+  background-image: /* @embed */ url(themes/dye/images/icons/networkOff-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-networkOff {
+  background-image: /* @embed */ url(themes/dye/images/icons/networkOff-progressive.svg);
 }
 .oo-ui-icon-newWindow {
   background-image: /* @embed */ url(themes/dye/images/icons/newWindow-rtl.svg);
