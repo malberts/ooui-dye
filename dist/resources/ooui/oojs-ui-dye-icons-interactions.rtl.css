@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.41.3
+ * OOUI v0.42.0
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-10-31T15:06:24Z
+ * Date: 2021-10-31T16:08:11Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -84,6 +84,9 @@
 }
 .oo-ui-icon-close {
   background-image: /* @embed */ url(themes/dye/images/icons/close.svg);
+}
+.oo-ui-image-destructive.oo-ui-icon-close {
+  background-image: /* @embed */ url(themes/dye/images/icons/close-destructive.svg);
 }
 .oo-ui-image-invert.oo-ui-icon-close {
   background-image: /* @embed */ url(themes/dye/images/icons/close-invert.svg);
