@@ -6,12 +6,6 @@
 
 base=oojs-ui/src/themes/dye
 
-# Create theme
-rm -rf $base
-cd oojs-ui
-grunt add-theme --name=Dye --template=WikimediaUI
-cd ..
-
 # Copy base variables
 cp oojs-ui/node_modules/wikimedia-ui-base/wikimedia-ui-base.less $base/dye-ui-base.less
 

@@ -1,6 +1,11 @@
 setup:
 	bash setup.sh
 
+create:
+	rm -f oojs-ui/php/themes/DyeTheme.php
+	rm -rf oojs-ui/src/themes/dye
+	cd oojs-ui && grunt add-theme --name=Dye --template=WikimediaUI
+
 convert:
 	bash convert.sh
 
