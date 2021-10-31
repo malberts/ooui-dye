@@ -26,8 +26,8 @@ jobs:
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: Generate $VERSION
-          title: Generate $VERSION
+          commit-message: Generate ${{VERSION}}
+          title: Generate ${{VERSION}}
           body: ""
           delete-branch: true
           branch: generate
