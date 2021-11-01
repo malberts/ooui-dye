@@ -1,5 +1,5 @@
 setup:
-	bash setup.sh
+	bash setup.sh $(TAG)
 
 create:
 	rm -f oojs-ui/php/themes/DyeTheme.php
