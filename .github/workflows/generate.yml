@@ -2,6 +2,11 @@ name: Generate
 
 on:
   workflow_dispatch:
+    inputs:
+      ooui-tag:
+        description: 'OOUI Tag'     
+        required: false
+        default: ''
 
 jobs:
   build:
@@ -17,8 +22,8 @@ jobs:
       - uses: php-actions/composer@v6
         with:
           php_version: 7.4
-          command: ""
-      - run: make setup
+          command: ''
+      - run: make setup TAG=${{ github.event.inputs.ooui-tag }}
       - run: make create
       - run: make convert
       - run: make build
@@ -31,7 +36,7 @@ jobs:
         with:
           commit-message: Generate ${{ env.VERSION }}
           title: Generate ${{ env.VERSION }}
-          body: ""
+          body: ''
           delete-branch: true
           branch: generate
       
