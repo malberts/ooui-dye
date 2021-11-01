@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.40.0
+ * OOUI v0.40.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-01T06:26:36Z
+ * Date: 2021-11-01T06:30:25Z
  */
 .oo-ui-element-hidden {
   display: none !important;
@@ -655,10 +655,12 @@
 .oo-ui-actionFieldLayout.oo-ui-fieldLayout-align-top {
   max-width: 50em;
 }
-.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input .oo-ui-widget:not( .oo-ui-textInputWidget ) {
+.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget {
   margin-right: 8px;
 }
-.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input {
+.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input,
+.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-dropdownWidget-handle,
+.oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-tagMultiselectWidget-handle {
   border-radius: 2px 0 0 2px;
   position: relative;
 }
@@ -1234,12 +1236,9 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-transition: width 100ms, height 100ms, left 100ms;
   transition: width 100ms, height 100ms, left 100ms;
 }
-.oo-ui-popupWidget-head {
-  position: relative;
-  overflow: auto;
-}
 .oo-ui-popupWidget-head > .oo-ui-iconElement-icon {
   left: 0.78571429em;
+  height: 2.02857143em;
 }
 .oo-ui-popupWidget-head > .oo-ui-iconElement-noIcon + .oo-ui-labelElement-label {
   margin-left: 12px;
@@ -2258,14 +2257,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 /*!
- * OOUI v0.40.0
+ * OOUI v0.40.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-01T06:26:36Z
+ * Date: 2021-11-01T06:30:25Z
  */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ).oo-ui-widget {
   cursor: move;
@@ -3305,14 +3304,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 /*!
- * OOUI v0.40.0
+ * OOUI v0.40.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-01T06:26:36Z
+ * Date: 2021-11-01T06:30:25Z
  */
 .oo-ui-tool {
   -webkit-box-sizing: border-box;
@@ -4002,14 +4001,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 /*!
- * OOUI v0.40.0
+ * OOUI v0.40.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-01T06:26:36Z
+ * Date: 2021-11-01T06:30:25Z
  */
 
 .oo-ui-window {
@@ -4432,14 +4431,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 /*!
- * OOUI v0.40.0
+ * OOUI v0.40.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-01T06:26:36Z
+ * Date: 2021-11-01T06:30:25Z
  */
 .oo-ui-icon-arrowNext {
   background-image: /* @embed */ url(themes/dye/images/icons/arrowNext-ltr.svg);
