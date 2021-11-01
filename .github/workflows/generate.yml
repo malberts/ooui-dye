@@ -32,6 +32,7 @@ jobs:
       - name: Get version
         run: |
           echo "VERSION=$(grep -oP 'OOUI \Kv.*' dist/resources/ooui/oojs-ui-core-dye.css)" >> $GITHUB_ENV
+      - run: make check-diff
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
