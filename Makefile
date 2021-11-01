@@ -20,3 +20,6 @@ copy:
 	cp -r oojs-ui/dist/themes/dye dist/resources/ooui/themes
 	mkdir -p dist/includes/ooui
 	cp oojs-ui/php/themes/DyeTheme.php dist/includes/ooui
+
+check-diff:
+	bash check-diff.sh
