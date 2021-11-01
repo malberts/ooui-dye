@@ -21,10 +21,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - uses: php-actions/composer@v6
+      - uses: shivammathur/setup-php@v2
         with:
-          php_version: 7.4
-          command: ''
+          php-version: '7.4'
       - run: make setup TAG=${{ github.event.inputs.ooui-tag }}
       - run: make create
       - run: make convert
