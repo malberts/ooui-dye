@@ -3,12 +3,7 @@ name: Generate
 on:
   schedule:
     - cron: '0 0 * * 6'
-  workflow_dispatch:
-    inputs:
-      ooui-tag:
-        description: 'OOUI Tag'     
-        required: false
-        default: ''
+  workflow_dispatch: {}
 
 jobs:
   build:
@@ -20,7 +15,7 @@ jobs:
           - v0.41.3
           - v0.42.0
           - v0.42.1
-          - ${{ github.event.inputs.ooui-tag }}
+          - ""
     env:
       VERSION: Unknown
 
