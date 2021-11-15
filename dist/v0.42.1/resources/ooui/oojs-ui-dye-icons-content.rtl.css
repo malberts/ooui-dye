@@ -1,12 +1,12 @@
 /*!
- * OOUI v0.42.0
+ * OOUI v0.42.1
  * https://www.mediawiki.org/wiki/OOUI
  *
  * Copyright 2011–2021 OOUI Team and other contributors.
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:16:29Z
+ * Date: 2021-11-15T19:35:48Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -114,6 +114,15 @@
 }
 .oo-ui-image-progressive.oo-ui-icon-articleRedirect {
   background-image: /* @embed */ url(themes/dye/images/icons/articleRedirect-rtl-progressive.svg);
+}
+.oo-ui-icon-database {
+  background-image: /* @embed */ url(themes/dye/images/icons/database.svg);
+}
+.oo-ui-image-invert.oo-ui-icon-database {
+  background-image: /* @embed */ url(themes/dye/images/icons/database-invert.svg);
+}
+.oo-ui-image-progressive.oo-ui-icon-database {
+  background-image: /* @embed */ url(themes/dye/images/icons/database-progressive.svg);
 }
 .oo-ui-icon-die {
   background-image: /* @embed */ url(themes/dye/images/icons/die.svg);
