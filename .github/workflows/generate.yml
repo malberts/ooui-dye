@@ -13,6 +13,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        tag:
+          - v0.39.3
+          - v0.41.3
+          - v0.42.0
+          - v0.42.1
+          - ${{ github.event.inputs.ooui-tag }}
     env:
       VERSION: Unknown
 
@@ -24,7 +32,7 @@ jobs:
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-      - run: make setup TAG=${{ github.event.inputs.ooui-tag }}
+      - run: make setup TAG=${matrix.tag}
       - run: make create
       - run: make convert
       - run: make build
