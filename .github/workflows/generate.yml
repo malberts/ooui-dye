@@ -48,5 +48,5 @@ jobs:
           title: Generate ${{ env.VERSION }}
           body: ''
           delete-branch: true
-          branch: generate
+          branch: generate-${{ env.VERSION }}
       
