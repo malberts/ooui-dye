@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:12:09Z
+ * Date: 2021-11-17T22:30:15Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -48,8 +48,8 @@
   transition: background-color 100ms;
 }
 .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   z-index: 1;
 }
 .oo-ui-tool.oo-ui-widget-enabled .oo-ui-iconElement-icon {
@@ -73,96 +73,96 @@
   color: inherit;
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary);
+  color: var(--color-tool--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent30);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link {
-  color: var(--color-destructive-non-primary);
+  color: #d73333;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-red90);
-  color: var(--ooui-color-red30);
+  background-color: var(--background-color-destructive);
+  color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-tool-link:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-red50--lighten);
+  background-color: var(--color-destructive--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-tool-link:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
   font-weight: bold;
@@ -238,12 +238,12 @@
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
-  background-color: var(--ooui-color-base70);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link .oo-ui-tool-title,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-base100);
+  color: var(--color-base--inverted);
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary.oo-ui-tool-active > .oo-ui-tool-link {
@@ -255,7 +255,7 @@
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled > .oo-ui-tool-link .oo-ui-tool-title,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool > .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -362,7 +362,7 @@
   opacity: 1;
 }
 .oo-ui-popupToolGroup-header {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   padding: 0 12px;
   font-weight: bold;
   line-height: 2.28571429em;
@@ -371,10 +371,10 @@
   padding: 0 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-toolbar);
   min-width: 16em;
   margin: 0 -1px;
-  border: 1px solid var(--ooui-color-base70);
+  border: 1px solid var(--border-color-toolbar);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
@@ -385,7 +385,7 @@
   padding-right: 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   line-height: 1.42857143em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel:not( :empty ) {
@@ -405,10 +405,10 @@
   transition: background-color 100ms, box-shadow 100ms;
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator {
@@ -425,8 +425,8 @@
   opacity: 1;
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled[class*='oo-ui-flaggedElement'] > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-widget-enabled[class*='oo-ui-flaggedElement'] > .oo-ui-popupToolGroup-handle:hover .oo-ui-iconElement-icon {
@@ -438,106 +438,106 @@
   transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
-  border-right-color: var(--ooui-color-base80);
+  border-right-color: var(--background-color-tool--hover);
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active {
-  border-right-color: var(--ooui-color-accent90);
+  border-right-color: var(--background-color-tool--active);
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus {
-  border-right-color: var(--ooui-color-accent50);
+  border-right-color: var(--border-color-base--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-tool--active);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-background-color-primary--hover);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-tool--active-hover);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-accent50);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
   outline: 0;
-  box-shadow: inset 0 0 0 2px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 2px var(--color-primary--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent30);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle {
-  color: var(--color-destructive-non-primary);
+  color: #d73333;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-red90);
-  color: var(--ooui-color-red30);
+  background-color: var(--background-color-destructive);
+  color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-red50--lighten);
+  background-color: var(--color-destructive--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary > .oo-ui-popupToolGroup-handle > .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary > .oo-ui-popupToolGroup-handle > .oo-ui-indicatorElement-indicator {
@@ -552,28 +552,28 @@
   box-sizing: border-box;
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-tool--hover);
+  color: var(--color-tool--hover);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-background-color-primary--hover);
+  background-color: var(--background-color-tool--active-hover);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-accent50);
+  color: var(--color-tool--active);
 }
 .oo-ui-listToolGroup.oo-ui-widget-disabled,
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-menuToolGroup {
-  border-left: 1px solid var(--ooui-color-base80);
-  border-right: 1px solid var(--ooui-color-base80);
+  border-left: 1px solid var(--border-color-toolgroup);
+  border-right: 1px solid var(--border-color-toolgroup);
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool {
   display: block;
@@ -594,14 +594,14 @@
   left: 0.71428571em;
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-background-color-primary--hover);
+  background-color: var(--background-color-tool--active-hover);
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-tool-active {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-menuToolGroup.oo-ui-widget-disabled,
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -657,15 +657,15 @@
   user-select: text;
 }
 .oo-ui-toolbar-bar {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base10);
+  background-color: var(--background-color-toolbar);
+  color: var(--color-base);
 }
 .oo-ui-toolbar-position-top > .oo-ui-toolbar-bar {
-  border-bottom: 1px solid var(--ooui-color-base70);
+  border-bottom: 1px solid var(--border-color-toolbar);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toolbar-position-bottom > .oo-ui-toolbar-bar {
-  border-top: 1px solid var(--ooui-color-base70);
+  border-top: 1px solid var(--border-color-toolbar);
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toolbar-bar .oo-ui-toolbar-bar {
@@ -683,8 +683,8 @@
   height: 0;
 }
 .oo-ui-toolbar-narrow.oo-ui-toolbar-position-top .oo-ui-toolbar-bar:after {
-  border-bottom: 1px solid var(--ooui-color-base70);
+  border-bottom: 1px solid var(--border-color-toolbar);
 }
 .oo-ui-toolbar-narrow.oo-ui-toolbar-position-bottom .oo-ui-toolbar-bar:after {
-  border-top: 1px solid var(--ooui-color-base70);
+  border-top: 1px solid var(--border-color-toolbar);
 }
