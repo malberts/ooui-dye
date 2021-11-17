@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -147,55 +147,55 @@
   padding-right: 2.14285714em;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-background-color-quiet--hover);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-quiet--hover);
+  color: var(--color-base--active);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > input.oo-ui-buttonElement-button,
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
-  background-color: var(--ooui-background-color-quiet--active);
-  color: var(--ooui-color-base0);
-  border-color: var(--ooui-color-base30);
+  background-color: var(--background-color-quiet--active);
+  color: var(--color-base--active);
+  border-color: var(--border-color-base--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-indicatorElement:not( .oo-ui-iconElement ):not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button {
   border-radius: 1px;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-indicatorElement:not( .oo-ui-iconElement ):not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:focus {
-  box-shadow: 0 0 0 2px var(--ooui-color-accent50);
+  box-shadow: 0 0 0 2px var(--color-primary);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-indicatorElement:not( .oo-ui-iconElement ):not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:active {
   box-shadow: none;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
-  color: var(--ooui-color-accent50--lighten);
+  color: var(--color-primary--hover);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
+  color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-red50);
+  color: var(--color-destructive);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
-  color: var(--ooui-color-red50--lighten);
+  color: var(--color-destructive--hover);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-red30);
-  border-color: var(--ooui-color-red30);
+  color: var(--color-destructive--active);
+  border-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled[class*='oo-ui-flaggedElement'] > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon,
@@ -203,7 +203,7 @@
   opacity: 1;
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 .oo-ui-buttonElement-frameless.oo-ui-widget-disabled > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon,
 .oo-ui-buttonElement-frameless.oo-ui-widget-disabled > .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
@@ -244,134 +244,134 @@
   padding-bottom: 5px;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-disabled > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-disabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {
   background-color: var(--color-primary--active--disabled);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-base90);
-  color: var(--ooui-color-base10);
-  border-color: var(--ooui-color-base50);
+  background-color: var(--background-color-framed);
+  color: var(--color-base);
+  border-color: var(--border-color-base);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base10--lighten);
-  border-color: var(--ooui-color-base50);
+  background-color: var(--background-color-framed--hover);
+  color: var(--color-base--hover);
+  border-color: var(--border-color-base--hover);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover > .oo-ui-iconElement-icon:not( .oo-ui-image-invert ),
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover > .oo-ui-indicatorElement-indicator:not( .oo-ui-image-invert ) {
   opacity: 0.74;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-accent30);
-  color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  color: var(--color-base--inverted);
+  border-color: var(--color-primary--active);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  border-color: var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base0);
-  border-color: var(--ooui-color-base30);
+  background-color: var(--background-color-framed--active);
+  color: var(--color-base--active);
+  border-color: var(--border-color-base--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--background-color-framed--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
-  color: var(--color-destructive-non-primary);
+  color: #d73333;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-red50--lighten);
+  background-color: var(--background-color-framed--hover);
+  border-color: var(--color-destructive--hover);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  border-color: var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-red90);
-  color: var(--ooui-color-red30);
-  border-color: var(--ooui-color-red30);
+  background-color: var(--background-color-destructive);
+  color: var(--color-destructive--active);
+  border-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent50);
-  border-color: var(--ooui-color-accent50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-accent50--lighten);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  border-color: var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus), inset 0 0 0 2px var(--color-base--inverted);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red50);
-  border-color: var(--ooui-color-red50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive);
+  border-color: var(--color-destructive);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-red50--lighten);
-  border-color: var(--ooui-color-red50--lighten);
+  background-color: var(--color-destructive--hover);
+  border-color: var(--color-destructive--hover);
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50), inset 0 0 0 2px var(--ooui-color-base100);
+  border-color: var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus), inset 0 0 0 2px var(--color-base--inverted);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-buttonElement-button:active,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-pressed > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-buttonElement-active > .oo-ui-buttonElement-button,
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-buttonElement-button {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red30);
-  border-color: var(--ooui-color-red30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive--active);
+  border-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-buttonElement-button > .oo-ui-iconElement-icon,
@@ -464,10 +464,10 @@
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-pendingElement-pending {
-  background-color: var(--ooui-color-base80);
-  background-image: -webkit-linear-gradient(135deg, var(--ooui-color-base100) 25%, transparent 25%, transparent 50%, var(--ooui-color-base100) 50%, var(--ooui-color-base100) 75%, transparent 75%, transparent);
-  background-image: -moz-linear-gradient(135deg, var(--ooui-color-base100) 25%, transparent 25%, transparent 50%, var(--ooui-color-base100) 50%, var(--ooui-color-base100) 75%, transparent 75%, transparent);
-  background-image: linear-gradient(135deg, var(--ooui-color-base100) 25%, transparent 25%, transparent 50%, var(--ooui-color-base100) 50%, var(--ooui-color-base100) 75%, transparent 75%, transparent);
+  background-color: var(--background-color-pending-stripe);
+  background-image: -webkit-linear-gradient(135deg, var(--background-color-base) 25%, transparent 25%, transparent 50%, var(--background-color-base) 50%, var(--background-color-base) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(135deg, var(--background-color-base) 25%, transparent 25%, transparent 50%, var(--background-color-base) 50%, var(--background-color-base) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, var(--background-color-base) 25%, transparent 25%, transparent 50%, var(--background-color-base) 50%, var(--background-color-base) 75%, transparent 75%, transparent);
   background-size: 1.42857143em 1.42857143em;
   -webkit-animation: oo-ui-pendingElement-stripes 650ms linear infinite;
   -moz-animation: oo-ui-pendingElement-stripes 650ms linear infinite;
@@ -660,7 +660,7 @@
   margin-top: 4px;
 }
 .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -812,7 +812,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-top: -6px;
 }
 .oo-ui-panelLayout-framed {
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
 }
 .oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
@@ -871,7 +871,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   opacity: 1;
 }
 .oo-ui-optionWidget.oo-ui-widget-disabled {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -917,7 +917,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   outline: 0;
 }
 .oo-ui-radioSelectWidget:focus [type='radio']:checked + span:before {
-  border-color: var(--ooui-color-base100);
+  border-color: var(--background-color-base);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -954,7 +954,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-labelWidget.oo-ui-inline-help {
   display: block;
-  color: var(--ooui-color-base20);
+  color: var(--color-base--deemphasized);
   font-size: 0.92857143em;
 }
 
@@ -985,26 +985,26 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-position: 0 16px;
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-error {
-  background-color: var(--ooui-color-red90);
-  border-color: var(--ooui-color-red50);
+  background-color: var(--background-color-error--framed);
+  border-color: var(--border-color-error);
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-warning {
-  background-color: var(--ooui-color-yellow90);
-  border-color: var(--ooui-color-yellow50);
+  background-color: var(--background-color-warning--framed);
+  border-color: var(--border-color-warning);
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-success {
-  background-color: var(--ooui-color-green90);
-  border-color: var(--ooui-color-green30);
+  background-color: var(--background-color-success--framed);
+  border-color: var(--border-color-success);
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-notice {
-  background-color: var(--ooui-color-base80);
-  border-color: var(--ooui-color-base50);
+  background-color: var(--background-color-notice--framed);
+  border-color: var(--border-color-notice);
 }
 .oo-ui-messageWidget.oo-ui-flaggedElement-error:not( .oo-ui-messageWidget-block ) {
-  color: var(--ooui-color-red50);
+  color: var(--color-error);
 }
 .oo-ui-messageWidget.oo-ui-flaggedElement-success:not( .oo-ui-messageWidget-block ) {
-  color: var(--ooui-color-green30);
+  color: var(--color-success);
 }
 .oo-ui-messageWidget + .oo-ui-messageWidget {
   margin-top: 8px;
@@ -1099,7 +1099,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-top-left-radius: 2px;
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
-  border-right-color: var(--ooui-color-base100);
+  border-right-color: var(--border-color-filled--disabled);
 }
 .oo-ui-buttonGroupWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
   z-index: 1;
@@ -1115,7 +1115,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-buttonGroupWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-toggleWidget-on + .oo-ui-toggleWidget-on > .oo-ui-buttonElement-button,
 .oo-ui-buttonGroupWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-toggleWidget-on + .oo-ui-toggleWidget-on > .oo-ui-buttonElement-button:active {
-  border-right-color: var(--ooui-color-base50);
+  border-right-color: var(--border-color-base);
   z-index: 3;
 }
 
@@ -1193,8 +1193,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   min-height: 1em;
 }
 .oo-ui-popupWidget-popup {
-  background-color: var(--ooui-color-base100);
-  border: 1px solid var(--ooui-color-base50);
+  background-color: var(--background-color-base);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
@@ -1217,13 +1217,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before {
   bottom: -10px;
   right: -9px;
-  border-bottom-color: var(--ooui-color-base30);
+  border-bottom-color: var(--border-color-base--active);
   border-width: 10px;
 }
 .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
   bottom: -10px;
   right: -8px;
-  border-bottom-color: var(--ooui-color-base100);
+  border-bottom-color: var(--background-color-base);
   border-width: 9px;
 }
 .oo-ui-popupWidget-anchored-bottom {
@@ -1235,13 +1235,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before {
   top: -10px;
   right: -9px;
-  border-top-color: var(--ooui-color-base50);
+  border-top-color: var(--border-color-base);
   border-width: 10px;
 }
 .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
   top: -10px;
   right: -8px;
-  border-top-color: var(--ooui-color-base100);
+  border-top-color: var(--background-color-base);
   border-width: 9px;
 }
 .oo-ui-popupWidget-anchored-start {
@@ -1253,13 +1253,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor:before {
   left: -10px;
   top: -9px;
-  border-left-color: var(--ooui-color-base50);
+  border-left-color: var(--border-color-base);
   border-width: 10px;
 }
 .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor:after {
   left: -10px;
   top: -8px;
-  border-left-color: var(--ooui-color-base100);
+  border-left-color: var(--background-color-base);
   border-width: 9px;
 }
 .oo-ui-popupWidget-anchored-end {
@@ -1271,13 +1271,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor:before {
   right: -10px;
   top: -9px;
-  border-right-color: var(--ooui-color-base50);
+  border-right-color: var(--border-color-base);
   border-width: 10px;
 }
 .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor:after {
   right: -10px;
   top: -8px;
-  border-right-color: var(--ooui-color-base100);
+  border-right-color: var(--background-color-base);
   border-width: 9px;
 }
 .oo-ui-popupWidget-transitioning .oo-ui-popupWidget-popup {
@@ -1368,7 +1368,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   z-index: 1;
 }
 .oo-ui-checkboxInputWidget [type='checkbox'] + span {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   background-size: 0 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1377,7 +1377,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   right: 0;
   width: 1.42857143em;
   height: 1.42857143em;
-  border-color: var(--ooui-color-base30);
+  border-color: var(--border-color-base--active);
   border-style: solid;
   border-radius: 2px;
   border-width: 1px;
@@ -1387,7 +1387,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-checkboxInputWidget [type='checkbox']:indeterminate + span:before {
   content: ' ';
-  background-color: var(--ooui-color-base100);
+  background-color: var(--color-base--inverted);
   position: absolute;
   top: 50%;
   right: 0.21428571em;
@@ -1396,8 +1396,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-top: -1px;
 }
 .oo-ui-checkboxInputWidget [type='checkbox']:disabled + span {
-  background-color: var(--ooui-color-base70);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox'] {
   cursor: pointer;
@@ -1409,39 +1409,39 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:focus + span {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   outline: 1px solid transparent;
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:hover + span {
-  border-color: var(--ooui-color-accent50--lighten);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:active + span {
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
+  box-shadow: inset 0 0 0 1px var(--color-primary--active);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:checked + span,
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:indeterminate + span {
-  background-color: var(--ooui-color-accent50);
-  border-color: var(--ooui-color-accent50);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:checked:focus + span,
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:indeterminate:focus + span {
-  background-color: var(--ooui-color-accent50);
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: inset 0 0 0 1px var(--color-primary), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:checked:hover + span,
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:indeterminate:hover + span {
-  background-color: var(--ooui-color-accent50--lighten);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:checked:active + span,
 .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:indeterminate:active + span {
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
+  box-shadow: inset 0 0 0 1px var(--color-primary--active);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -1494,7 +1494,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 2.28571429em;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   padding-right: 12px;
   padding-left: 2.14285714em;
@@ -1524,39 +1524,39 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding: 5px 12px;
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled {
-  background-color: var(--ooui-color-base90);
+  background-color: var(--background-color-framed);
   -webkit-transition: background-color 100ms;
   -moz-transition: background-color 100ms;
   transition: background-color 100ms;
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select {
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
   -webkit-transition: border-color 100ms, box-shadow 100ms;
   -moz-transition: border-color 100ms, box-shadow 100ms;
   transition: border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:hover {
-  color: var(--ooui-color-base10--lighten);
-  border-color: var(--ooui-color-base50);
+  color: var(--color-base--hover);
+  border-color: var(--border-color-base--hover);
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:active {
-  color: var(--ooui-color-base0);
-  border-color: var(--ooui-color-base30);
+  color: var(--color-base--active);
+  border-color: var(--border-color-base--active);
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-disabled {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-base--disabled);
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-disabled select {
-  color: var(--ooui-color-base30);
-  border-color: var(--ooui-color-base70);
+  color: var(--color-base--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -1582,7 +1582,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   z-index: 1;
 }
 .oo-ui-radioInputWidget [type='radio'] + span {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   position: absolute;
   right: 0;
   -webkit-box-sizing: border-box;
@@ -1590,7 +1590,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   width: 1.42857143em;
   height: 1.42857143em;
-  border-color: var(--ooui-color-base30);
+  border-color: var(--border-color-base--active);
   border-style: solid;
   border-radius: 100%;
   border-width: 0;
@@ -1612,11 +1612,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-width: 6px;
 }
 .oo-ui-radioInputWidget [type='radio']:disabled + span {
-  background-color: var(--ooui-color-base70);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-radioInputWidget [type='radio']:disabled:checked + span {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio'] {
   cursor: pointer;
@@ -1628,27 +1628,27 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms, border-color 100ms, border-width 100ms;
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:hover + span {
-  border-color: var(--ooui-color-accent50--lighten);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:active + span {
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:checked + span {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--color-primary);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:checked:focus + span:before {
-  border-color: var(--ooui-color-base100);
+  border-color: var(--background-color-base);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:checked:hover + span {
-  border-color: var(--ooui-color-accent50--lighten);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:checked:active + span {
-  border-color: var(--ooui-color-accent30);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent30);
+  border-color: var(--color-primary--active);
+  box-shadow: inset 0 0 0 1px var(--color-primary--active);
 }
 .oo-ui-radioInputWidget.oo-ui-widget-enabled [type='radio']:checked:active + span:before {
-  border-color: var(--ooui-color-accent30);
+  border-color: var(--color-primary--active);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -1741,10 +1741,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   user-select: none;
 }
 .oo-ui-textInputWidget .oo-ui-inputWidget-input {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-base);
+  color: var(--color-base--emphasized);
   margin: 0;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   padding: 5px 8px;
   font-size: inherit;
@@ -1755,7 +1755,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 2.28571429em;
 }
 .oo-ui-textInputWidget .oo-ui-pendingElement-pending {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-pending-stripe);
 }
 .oo-ui-textInputWidget.oo-ui-iconElement .oo-ui-inputWidget-input {
   padding-right: 2.42857143em;
@@ -1767,7 +1767,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-height: 2.28571429em;
 }
 .oo-ui-textInputWidget > .oo-ui-labelElement-label {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   padding: 0 8px 0 12px;
   line-height: 2.28571429em;
 }
@@ -1794,50 +1794,50 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: border-color 250ms, box-shadow 250ms;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input::-webkit-input-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:-ms-input-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input::-moz-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:-moz-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input::placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:focus {
   outline: 0;
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:focus ~ .oo-ui-iconElement-icon,
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input:focus ~ .oo-ui-indicatorElement-indicator {
   opacity: 1;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled .oo-ui-inputWidget-input[readonly]:not( .oo-ui-pendingElement-pending ) {
-  background-color: var(--ooui-color-base90);
+  background-color: var(--background-color-base--read-only);
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled:hover .oo-ui-inputWidget-input {
-  border-color: var(--ooui-color-base30);
+  border-color: var(--border-color-input--hover);
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled:hover .oo-ui-inputWidget-input:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 @media screen and (min-width: 0) {
   .oo-ui-textInputWidget.oo-ui-widget-enabled textarea.oo-ui-inputWidget-input:focus {
-    outline: 1px solid var(--ooui-color-accent50);
+    outline: 1px solid var(--color-primary);
     outline-offset: -2px;
   }
   .oo-ui-textInputWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid textarea.oo-ui-inputWidget-input:focus {
-    outline-color: var(--ooui-color-red50);
+    outline-color: var(--border-color-error);
   }
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled > .oo-ui-iconElement-icon {
@@ -1847,29 +1847,29 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   opacity: 0.87;
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input:hover {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-textInputWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input:focus {
-  border-color: var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  border-color: var(--border-color-error);
+  box-shadow: inset 0 0 0 1px var(--color-error);
 }
 .oo-ui-textInputWidget.oo-ui-widget-disabled .oo-ui-inputWidget-input {
-  background-color: var(--ooui-color-base80);
-  -webkit-text-fill-color: var(--ooui-color-base30);
-  color: var(--ooui-color-base30);
-  text-shadow: 0 1px 1px var(--ooui-color-base100);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-base--disabled);
+  -webkit-text-fill-color: var(--color-base--disabled);
+  color: var(--color-base--disabled);
+  text-shadow: 0 1px 1px var(--color-base--inverted);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-textInputWidget.oo-ui-widget-disabled > .oo-ui-iconElement-icon,
 .oo-ui-textInputWidget.oo-ui-widget-disabled > .oo-ui-indicatorElement-indicator {
   opacity: 0.51;
 }
 .oo-ui-textInputWidget.oo-ui-widget-disabled > .oo-ui-labelElement-label {
-  color: var(--ooui-color-base30);
-  text-shadow: 0 1px 1px var(--ooui-color-base100);
+  color: var(--color-base--disabled);
+  text-shadow: 0 1px 1px var(--color-base--inverted);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -1878,10 +1878,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   position: absolute;
   width: 100%;
   z-index: 4;
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   margin-top: -1px;
   margin-bottom: -1px;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 0 0 2px 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
@@ -1903,26 +1903,26 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: none;
 }
 .oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-base--hover);
+  color: var(--color-base--emphasized);
 }
 .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
 }
 .oo-ui-menuOptionWidget.oo-ui-optionWidget-selected.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted,
 .oo-ui-menuOptionWidget.oo-ui-optionWidget-pressed.oo-ui-menuOptionWidget.oo-ui-optionWidget-highlighted {
-  background-color: var(--ooui-background-color-primary--hover);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary--hover);
+  color: var(--color-primary);
 }
 .oo-ui-menuOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget {
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-menuSectionOptionWidget {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   padding: 5px 12px 4px;
   font-weight: bold;
 }
@@ -1977,7 +1977,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-dropdownWidget-handle {
   min-height: 32px;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   padding: 5px 12px 5px 2.14285714em;
   line-height: 1;
@@ -1998,29 +1998,29 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-left: 2.57142857em;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle {
-  background-color: var(--ooui-color-base90);
-  color: var(--ooui-color-base10);
+  background-color: var(--background-color-framed);
+  color: var(--color-base);
   -webkit-transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
   -moz-transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
   transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base10--lighten);
-  border-color: var(--ooui-color-base50);
+  background-color: var(--background-color-framed--hover);
+  color: var(--color-base--hover);
+  border-color: var(--border-color-base--hover);
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover .oo-ui-iconElement-icon,
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:hover .oo-ui-indicatorElement-indicator {
   opacity: 0.74;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:active {
-  color: var(--ooui-color-base0);
-  border-color: var(--ooui-color-base30);
+  color: var(--color-base--active);
+  border-color: var(--border-color-base--active);
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle .oo-ui-iconElement-icon,
 .oo-ui-dropdownWidget.oo-ui-widget-enabled .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {
@@ -2030,17 +2030,17 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: opacity 100ms;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle .oo-ui-iconElement-icon,
 .oo-ui-dropdownWidget.oo-ui-widget-enabled.oo-ui-dropdownWidget-open .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {
   opacity: 1;
 }
 .oo-ui-dropdownWidget.oo-ui-widget-disabled .oo-ui-dropdownWidget-handle {
-  color: var(--ooui-color-base30);
-  text-shadow: 0 1px 1px var(--ooui-color-base100);
-  border-color: var(--ooui-color-base70);
-  background-color: var(--ooui-color-base80);
+  color: var(--color-base--disabled);
+  text-shadow: 0 1px 1px var(--color-base--inverted);
+  border-color: var(--border-color-base--disabled);
+  background-color: var(--background-color-base--disabled);
 }
 .oo-ui-dropdownWidget.oo-ui-widget-disabled .oo-ui-dropdownWidget-handle:focus {
   outline: 0;
@@ -2124,7 +2124,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin: 0;
 }
 .oo-ui-comboBoxInputWidget-open .oo-ui-comboBoxInputWidget-dropdownButton > .oo-ui-buttonElement-button {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-comboBoxInputWidget-open .oo-ui-comboBoxInputWidget-dropdownButton > .oo-ui-buttonElement-button .oo-ui-indicatorElement-indicator {
   opacity: 1;
@@ -2155,7 +2155,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   overflow: hidden;
 }
 .oo-ui-multioptionWidget.oo-ui-widget-disabled {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -2195,13 +2195,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 50em;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 1em;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 .oo-ui-progressBarWidget:not( .oo-ui-pendingElement-pending ) {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-progressBarWidget-bar {
   height: 1em;
@@ -2220,10 +2220,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transform: translate(25%);
 }
 .oo-ui-progressBarWidget.oo-ui-widget-enabled .oo-ui-progressBarWidget-bar {
-  background-color: var(--ooui-color-accent50);
+  background-color: var(--color-primary);
 }
 .oo-ui-progressBarWidget.oo-ui-widget-disabled .oo-ui-progressBarWidget-bar {
-  background-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
 }
 @-webkit-keyframes oo-ui-progressBarWidget-slide {
   from {
@@ -2367,7 +2367,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -2437,10 +2437,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding: 20px;
 }
 .oo-ui-bookletLayout-outlinePanel > .oo-ui-outlineControlsWidget {
-  border-top: 1px solid var(--ooui-color-base70);
+  border-top: 1px solid var(--border-color-dialog-bar);
 }
 .oo-ui-bookletLayout > .oo-ui-menuLayout-menu {
-  border-left: 1px solid var(--ooui-color-base70);
+  border-left: 1px solid var(--border-color-dialog-bar);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -2612,11 +2612,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-top-left-radius: 2px;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
-  border-right-color: var(--ooui-color-base100);
+  border-right-color: var(--border-color-filled--disabled);
 }
 .oo-ui-buttonSelectWidget.oo-ui-widget-enabled:focus .oo-ui-buttonOptionWidget.oo-ui-optionWidget-selected .oo-ui-buttonElement-button {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary), inset 0 0 0 2px var(--color-base--inverted);
   outline: 1px solid transparent;
 }
 .oo-ui-buttonSelectWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
@@ -2651,8 +2651,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-left: 0;
 }
 .oo-ui-toggleButtonWidget.oo-ui-widget-enabled.oo-ui-buttonElement-frameless.oo-ui-toggleWidget-on .oo-ui-buttonElement-button {
-  background-color: var(--ooui-background-color-quiet--active);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-quiet--active);
+  color: var(--color-base--active);
 }
 .oo-ui-toggleButtonWidget.oo-ui-widget-enabled.oo-ui-buttonElement-frameless.oo-ui-toggleWidget-on .oo-ui-buttonElement-button > .oo-ui-iconElement-icon:not( .oo-ui-image-invert ) {
   opacity: 1;
@@ -2670,11 +2670,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  background-color: var(--ooui-color-base90);
+  background-color: var(--background-color-framed);
   width: 3.5em;
   min-height: 26px;
   height: 2em;
-  border: 1px solid var(--ooui-color-base30);
+  border: 1px solid var(--border-color-base--active);
   border-radius: 1em;
   margin-left: 8px;
   -webkit-transition: background-color 250ms, border-color 250ms;
@@ -2732,74 +2732,74 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-right: -2px;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled .oo-ui-toggleSwitchWidget-grip {
-  background-color: var(--ooui-color-base90);
-  border: 1px solid var(--ooui-color-base30);
+  background-color: var(--background-color-framed);
+  border: 1px solid var(--border-color-base--active);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--background-color-framed--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:hover .oo-ui-toggleSwitchWidget-grip {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--background-color-framed--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active,
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active:hover,
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active:focus {
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
+  box-shadow: inset 0 0 0 1px var(--color-primary--active);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active .oo-ui-toggleSwitchWidget-grip,
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active:hover .oo-ui-toggleSwitchWidget-grip,
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:active:focus .oo-ui-toggleSwitchWidget-grip {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
+  border-color: var(--background-color-base);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--color-primary);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   outline: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:focus .oo-ui-toggleSwitchWidget-grip {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--color-primary);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on {
-  background-color: var(--ooui-color-accent50);
-  border-color: var(--ooui-color-accent50);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on .oo-ui-toggleSwitchWidget-grip {
-  background-color: var(--ooui-color-base100);
-  border-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
+  border-color: var(--background-color-base);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on:hover {
-  background-color: var(--ooui-color-accent50--lighten);
-  border-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
+  border-color: var(--color-primary--hover);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on:active,
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on:active:hover {
-  background-color: var(--ooui-color-accent30);
-  border-color: var(--ooui-color-accent30);
+  background-color: var(--color-primary--active);
+  border-color: var(--color-primary--active);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--color-primary);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled.oo-ui-toggleWidget-on:focus:before {
-  border-color: var(--ooui-color-base100);
+  border-color: var(--color-base--inverted);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-disabled {
-  background-color: var(--ooui-color-base70);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
   outline: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-disabled.oo-ui-toggleWidget-off .oo-ui-toggleSwitchWidget-grip {
-  border: 1px solid var(--ooui-color-base100);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-base100);
+  border: 1px solid var(--border-color-filled--disabled);
+  box-shadow: inset 0 0 0 1px var(--color-filled--disabled);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-disabled.oo-ui-toggleWidget-on .oo-ui-toggleSwitchWidget-grip {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -2881,8 +2881,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   cursor: no-drop;
 }
 .oo-ui-selectFileWidget-dropTarget {
-  background-color: var(--ooui-color-base100);
-  border: 1px solid var(--ooui-color-base50);
+  background-color: var(--background-color-base);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   vertical-align: middle;
   overflow: hidden;
@@ -2898,13 +2898,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-width: none;
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-dropTarget {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   -webkit-transition: background-color 250ms, color 250ms, border-color 250ms;
   -moz-transition: background-color 250ms, color 250ms, border-color 250ms;
   transition: background-color 250ms, color 250ms, border-color 250ms;
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-dropTarget:hover {
-  border-color: var(--ooui-color-base30);
+  border-color: var(--border-color-input--hover);
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled .oo-ui-selectFileInputWidget-info > .oo-ui-inputWidget-input {
   -webkit-transition: background-color 250ms, color 250ms;
@@ -2913,13 +2913,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-canDrop.oo-ui-selectFileWidget-dropTarget,
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-canDrop .oo-ui-selectFileInputWidget-info > .oo-ui-inputWidget-input {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
 }
 .oo-ui-selectFileWidget.oo-ui-widget-disabled.oo-ui-selectFileWidget-dropTarget,
 .oo-ui-selectFileWidget.oo-ui-selectFileInputWidget-empty.oo-ui-widget-disabled.oo-ui-selectFileWidget-dropTarget {
-  background-color: var(--ooui-color-base80);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-base--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -2928,7 +2928,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 100%;
 }
 .oo-ui-outlineSelectWidget:focus {
-  box-shadow: inset 0 0 0 2px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 2px var(--color-primary);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -2945,16 +2945,16 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms, color 100ms;
 }
 .oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-base--hover);
+  color: var(--color-base--emphasized);
 }
 .oo-ui-outlineOptionWidget.oo-ui-optionWidget-selected {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary);
 }
 .oo-ui-outlineOptionWidget.oo-ui-optionWidget-pressed {
-  background-color: var(--ooui-background-color-primary--hover);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary--hover);
+  color: var(--color-primary);
 }
 .oo-ui-outlineOptionWidget.oo-ui-indicatorElement .oo-ui-labelElement-label {
   padding-left: 1.5em;
@@ -2984,7 +2984,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-outlineControlsWidget {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-outlineControlsWidget-items,
 .oo-ui-outlineControlsWidget-movers {
@@ -3022,10 +3022,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   white-space: nowrap;
 }
 .oo-ui-tabSelectWidget-framed {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tabs);
 }
 .oo-ui-tabSelectWidget-frameless {
-  box-shadow: inset 0 -1px 0 0 var(--ooui-color-base50);
+  box-shadow: inset 0 -1px 0 0 var(--border-color-base);
 }
 .oo-ui-tabSelectWidget-mobile:after {
   content: '';
@@ -3065,7 +3065,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: bottom;
-  color: var(--ooui-color-base10--lighten);
+  color: var(--color-base--hover);
   margin: 6px 6px 0 0;
   padding: 0 8px;
   border-color: transparent;
@@ -3101,49 +3101,49 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: border-color 100ms;
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-base);
+  color: var(--color-base--active);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected .oo-ui-labelElement-label {
-  border-bottom-color: var(--ooui-color-base100);
+  border-bottom-color: var(--background-color-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-widget-enabled:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-widget-enabled:active {
   background-color: rgba(255, 255, 255, 0.8);
-  color: var(--ooui-color-base0);
+  color: var(--color-base--active);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget-selected:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-tabSelectWidget-framed.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected .oo-ui-labelElement-label {
-  border-bottom-color: var(--ooui-color-accent50);
+  border-bottom-color: var(--border-color-base--focus);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget {
   margin: 6px 0 -1px 6px;
   border-width: 1px 0;
-  box-shadow: inset 0 0 0 0 var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 0 var(--color-primary);
   -webkit-transition: color 100ms, box-shadow 100ms;
   -moz-transition: color 100ms, box-shadow 100ms;
   transition: color 100ms, box-shadow 100ms;
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
-  color: var(--ooui-color-accent50);
-  box-shadow: inset 0 -2px 0 0 var(--ooui-color-accent50);
+  color: var(--color-primary);
+  box-shadow: inset 0 -2px 0 0 var(--color-primary);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-widget-enabled:hover {
-  color: var(--ooui-color-accent50--lighten);
-  box-shadow: inset 0 -2px 0 0 var(--ooui-color-accent50--lighten);
+  color: var(--color-primary--hover);
+  box-shadow: inset 0 -2px 0 0 var(--color-primary--hover);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-widget-enabled:active {
-  color: var(--ooui-color-accent30);
-  box-shadow: inset 0 -2px 0 0 var(--ooui-color-accent30);
+  color: var(--color-primary--active);
+  box-shadow: inset 0 -2px 0 0 var(--color-primary--active);
 }
 .oo-ui-tabSelectWidget-frameless.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
   border-radius: 2px;
-  box-shadow: inset 0 0 0 2px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 2px var(--color-primary);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -3195,7 +3195,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   min-height: 32px;
   margin-left: 8px;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   padding: 0 8px;
   line-height: 1;
@@ -3211,7 +3211,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {
   background-color: transparent;
-  color: var(--ooui-color-base0);
+  color: var(--color-base--emphasized);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3225,23 +3225,23 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   vertical-align: top;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input::-webkit-input-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input:-ms-input-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input::-moz-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input:-moz-placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input::placeholder {
-  color: var(--ooui-color-base30);
+  color: var(--color-placeholder);
   opacity: 1;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input:focus {
@@ -3274,7 +3274,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-top-left-radius: 0;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
   -webkit-transition: border-color 250ms, box-shadow 250ms;
@@ -3282,34 +3282,34 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: border-color 250ms, box-shadow 250ms;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined:hover .oo-ui-tagMultiselectWidget-handle {
-  border-color: var(--ooui-color-base30);
+  border-color: var(--border-color-input--hover);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-tagMultiselectWidget-focus .oo-ui-tagMultiselectWidget-handle {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid .oo-ui-tagMultiselectWidget-handle,
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid:hover .oo-ui-tagMultiselectWidget-handle {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined {
-  background-color: var(--ooui-color-base90);
+  background-color: var(--background-color-base--read-only);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined .oo-ui-tagItemWidget.oo-ui-widget-enabled {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-outlined.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid .oo-ui-inputWidget-input {
-  color: var(--ooui-color-red50);
+  color: var(--color-error);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base30);
-  text-shadow: 0 1px 1px var(--ooui-color-base100);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-base--disabled);
+  color: var(--color-base--disabled);
+  text-shadow: 0 1px 1px var(--color-base--inverted);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle > .oo-ui-iconElement-icon {
   opacity: 0.51;
@@ -3335,7 +3335,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-width: 100%;
   height: 1.57142857em;
   margin: 0 0 4px 4px;
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 1.57142857em;
   padding: 0 8px;
   line-height: 1.42857143em;
@@ -3355,34 +3355,34 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   line-height: 1.61538462em;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled {
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
   -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   -moz-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
   transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base10--lighten);
-  border-color: var(--ooui-color-base50);
+  background-color: var(--background-color-framed--hover);
+  color: var(--color-base--hover);
+  border-color: var(--border-color-base--hover);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:focus {
-  border-color: var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   outline: 0;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:not( .oo-ui-tagItemWidget-fixed ) {
-  background-color: var(--ooui-color-base90);
+  background-color: var(--background-color-framed);
   padding-left: 23px;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid:hover {
-  border-color: var(--ooui-color-red50);
+  border-color: var(--border-color-error);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid:focus {
-  border-color: var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  border-color: var(--border-color-error);
+  box-shadow: inset 0 0 0 1px var(--color-error);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled > .oo-ui-buttonElement {
   display: block;
@@ -3403,10 +3403,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button:active {
-  background-color: var(--ooui-color-base70);
+  background-color: var(--background-color-framed--active);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-icon-close {
   right: 3px;
@@ -3418,10 +3418,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: none;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-disabled {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base30);
-  border-color: var(--ooui-color-base70);
-  text-shadow: 0 1px 1px var(--ooui-color-base100);
+  background-color: var(--background-color-base--disabled);
+  color: var(--color-base--disabled);
+  border-color: var(--border-color-base--disabled);
+  text-shadow: 0 1px 1px var(--color-base--inverted);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-disabled:focus {
   outline: 0;
@@ -3453,7 +3453,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-searchWidget-query {
   height: 4em;
   padding: 0 16px;
-  border-bottom: 1px solid var(--ooui-color-base70);
+  border-bottom: 1px solid var(--border-color-toolbar);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-searchWidget-query .oo-ui-textInputWidget {
@@ -3473,7 +3473,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -3518,8 +3518,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms;
 }
 .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
   z-index: 1;
 }
 .oo-ui-tool.oo-ui-widget-enabled .oo-ui-iconElement-icon {
@@ -3545,96 +3545,96 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: inherit;
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-primary);
+  color: var(--color-tool--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent30);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link {
-  color: var(--color-destructive-non-primary);
+  color: #d73333;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-tool-link {
-  background-color: var(--ooui-color-red90);
-  color: var(--ooui-color-red30);
+  background-color: var(--background-color-destructive);
+  color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-tool-link:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:hover {
-  background-color: var(--ooui-color-red50--lighten);
+  background-color: var(--color-destructive--hover);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-tool-link:active,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-tool-link {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-tool-link,
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-tool-link:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
   font-weight: bold;
@@ -3711,12 +3711,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link {
-  background-color: var(--ooui-color-base70);
-  border-color: var(--ooui-color-base70);
+  background-color: var(--background-color-filled--disabled);
+  border-color: var(--border-color-base--disabled);
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary > .oo-ui-tool-link .oo-ui-tool-title,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary > .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-base100);
+  color: var(--color-base--inverted);
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled.oo-ui-flaggedElement-primary.oo-ui-tool-active > .oo-ui-tool-link,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool.oo-ui-flaggedElement-primary.oo-ui-tool-active > .oo-ui-tool-link {
@@ -3728,7 +3728,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled > .oo-ui-tool-link .oo-ui-tool-title,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool > .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -3836,7 +3836,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   opacity: 1;
 }
 .oo-ui-popupToolGroup-header {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   padding: 0 12px;
   font-weight: bold;
   line-height: 2.28571429em;
@@ -3845,10 +3845,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding: 0 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-toolbar);
   min-width: 16em;
   margin: 0 -1px;
-  border: 1px solid var(--ooui-color-base70);
+  border: 1px solid var(--border-color-toolbar);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
@@ -3859,7 +3859,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-left: 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--subtle);
   line-height: 1.42857143em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel:not( :empty ) {
@@ -3880,10 +3880,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms, box-shadow 100ms;
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base80);
+  background-color: var(--background-color-tool--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator {
@@ -3901,8 +3901,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   opacity: 1;
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--border-color-base--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled[class*='oo-ui-flaggedElement'] > .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-widget-enabled[class*='oo-ui-flaggedElement'] > .oo-ui-popupToolGroup-handle:hover .oo-ui-iconElement-icon {
@@ -3915,106 +3915,106 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: background-color 100ms, border-color 100ms, box-shadow 100ms;
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:hover {
-  border-left-color: var(--ooui-color-base80);
+  border-left-color: var(--background-color-tool--hover);
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:active {
-  border-left-color: var(--ooui-color-accent90);
+  border-left-color: var(--background-color-tool--active);
 }
 .oo-ui-toolbar-actions .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle:focus {
-  border-left-color: var(--ooui-color-accent50);
+  border-left-color: var(--border-color-base--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-tool--active);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-background-color-primary--hover);
-  color: var(--ooui-color-accent50);
+  background-color: var(--background-color-tool--active-hover);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-accent50);
+  color: var(--color-tool--active);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link:focus {
   outline: 0;
-  box-shadow: inset 0 0 0 2px var(--ooui-color-accent50);
+  box-shadow: inset 0 0 0 2px var(--color-primary--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-accent50);
+  color: var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-progressive.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-accent90);
-  color: var(--ooui-color-accent30);
+  background-color: var(--background-color-primary);
+  color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle {
-  color: var(--color-destructive-non-primary);
+  color: #d73333;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-framed--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-destructive.oo-ui-popupToolGroup-active > .oo-ui-popupToolGroup-handle {
-  background-color: var(--ooui-color-red90);
-  color: var(--ooui-color-red30);
+  background-color: var(--background-color-destructive);
+  color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-accent50--lighten);
+  background-color: var(--color-primary--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-accent50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-accent50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-primary--focus);
+  box-shadow: inset 0 0 0 1px var(--color-primary--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-accent30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-primary--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red50);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:hover {
-  background-color: var(--ooui-color-red50--lighten);
+  background-color: var(--color-destructive--hover);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:focus {
-  outline: 1px solid var(--ooui-color-red50);
-  box-shadow: inset 0 0 0 1px var(--ooui-color-red50), inset 0 0 0 2px var(--ooui-color-base100);
+  outline: 1px solid var(--color-destructive--focus);
+  box-shadow: inset 0 0 0 1px var(--color-destructive--focus), inset 0 0 0 2px var(--color-base--inverted);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive > .oo-ui-popupToolGroup-handle:active,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-tool-active > .oo-ui-popupToolGroup-handle {
-  color: var(--ooui-color-base100);
-  background-color: var(--ooui-color-red30);
+  color: var(--color-base--inverted);
+  background-color: var(--color-destructive--active);
   box-shadow: none;
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-destructive.oo-ui-widget-disabled > .oo-ui-popupToolGroup-handle:active {
-  background-color: var(--ooui-color-base70);
-  color: var(--ooui-color-base100);
+  background-color: var(--background-color-filled--disabled);
+  color: var(--color-filled--disabled);
 }
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary > .oo-ui-popupToolGroup-handle > .oo-ui-iconElement-icon,
 .oo-ui-popupToolGroup.oo-ui-flaggedElement-primary > .oo-ui-popupToolGroup-handle > .oo-ui-indicatorElement-indicator {
@@ -4030,28 +4030,28 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-color-base80);
-  color: var(--ooui-color-base0);
+  background-color: var(--background-color-tool--hover);
+  color: var(--color-tool--hover);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-background-color-primary--hover);
+  background-color: var(--background-color-tool--active-hover);
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool-active.oo-ui-widget-enabled .oo-ui-tool-link .oo-ui-tool-title {
-  color: var(--ooui-color-accent50);
+  color: var(--color-tool--active);
 }
 .oo-ui-listToolGroup.oo-ui-widget-disabled,
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-menuToolGroup {
-  border-right: 1px solid var(--ooui-color-base80);
-  border-left: 1px solid var(--ooui-color-base80);
+  border-right: 1px solid var(--border-color-toolgroup);
+  border-left: 1px solid var(--border-color-toolgroup);
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool {
   display: block;
@@ -4072,14 +4072,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   right: 0.71428571em;
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
-  background-color: var(--ooui-background-color-primary--hover);
+  background-color: var(--background-color-tool--active-hover);
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-tool-active {
-  background-color: var(--ooui-color-accent90);
+  background-color: var(--background-color-tool--active);
 }
 .oo-ui-menuToolGroup.oo-ui-widget-disabled,
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-tool-title {
-  color: var(--ooui-color-base30);
+  color: var(--color-base--disabled);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -4135,15 +4135,15 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   user-select: text;
 }
 .oo-ui-toolbar-bar {
-  background-color: var(--ooui-color-base100);
-  color: var(--ooui-color-base10);
+  background-color: var(--background-color-toolbar);
+  color: var(--color-base);
 }
 .oo-ui-toolbar-position-top > .oo-ui-toolbar-bar {
-  border-bottom: 1px solid var(--ooui-color-base70);
+  border-bottom: 1px solid var(--border-color-toolbar);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toolbar-position-bottom > .oo-ui-toolbar-bar {
-  border-top: 1px solid var(--ooui-color-base70);
+  border-top: 1px solid var(--border-color-toolbar);
   box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-toolbar-bar .oo-ui-toolbar-bar {
@@ -4161,10 +4161,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 0;
 }
 .oo-ui-toolbar-narrow.oo-ui-toolbar-position-top .oo-ui-toolbar-bar:after {
-  border-bottom: 1px solid var(--ooui-color-base70);
+  border-bottom: 1px solid var(--border-color-toolbar);
 }
 .oo-ui-toolbar-narrow.oo-ui-toolbar-position-bottom .oo-ui-toolbar-bar:after {
-  border-top: 1px solid var(--ooui-color-base70);
+  border-top: 1px solid var(--border-color-toolbar);
 }
 
 /*!
@@ -4175,7 +4175,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -4284,7 +4284,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-messageDialog-content > .oo-ui-window-foot {
   /* For some reason %60outline` in this file is throwing warnings, but not elsewhere */
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  outline: 1px solid var(--ooui-color-base50);
+  outline: 1px solid var(--border-color-base);
 }
 .oo-ui-messageDialog-title,
 .oo-ui-messageDialog-message {
@@ -4294,11 +4294,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-messageDialog-title {
   font-size: 1.5em;
-  color: var(--ooui-color-base0);
+  color: var(--color-base--emphasized);
 }
 .oo-ui-messageDialog-message {
   font-size: 1.1em;
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
   text-align: right;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget {
@@ -4328,7 +4328,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: rgba(212, 83, 83, 0.1);
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget {
-  border-left: 1px solid var(--ooui-color-base50);
+  border-left: 1px solid var(--border-color-base);
   margin: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:first-child > .oo-ui-buttonElement-button {
@@ -4344,7 +4344,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-radius: 0 0 2px 2px;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget {
-  border-bottom: 1px solid var(--ooui-color-base50);
+  border-bottom: 1px solid var(--border-color-base);
   margin: 0;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget:last-child {
@@ -4396,7 +4396,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-processDialog-content .oo-ui-window-head,
 .oo-ui-processDialog-content .oo-ui-window-foot {
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  outline: 1px solid var(--ooui-color-base70);
+  outline: 1px solid var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-content .oo-ui-window-head {
   min-height: 2.85714286em;
@@ -4430,11 +4430,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:hover,
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:active {
-  border-left-color: var(--ooui-color-base70);
+  border-left-color: var(--border-color-dialog-bar);
   border-right-color: transparent;
 }
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-iconElement > .oo-ui-buttonElement-button {
   min-height: 2.85714286em;
@@ -4452,20 +4452,20 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-right: 2.42857143em;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget > .oo-ui-buttonElement-button {
-  border-right-color: var(--ooui-color-base70);
+  border-right-color: var(--border-color-dialog-bar);
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:hover,
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:active {
-  border-right-color: var(--ooui-color-base70);
+  border-right-color: var(--border-color-dialog-bar);
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-actionWidget > .oo-ui-buttonElement-button,
 .oo-ui-processDialog-actions-other .oo-ui-actionWidget > .oo-ui-buttonElement-button {
-  border-left-color: var(--ooui-color-base70);
+  border-left-color: var(--border-color-dialog-bar);
   border-right-color: transparent;
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button {
@@ -4473,15 +4473,15 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base90);
-  border-left-color: var(--ooui-color-base70);
+  background-color: var(--background-color-framed);
+  border-left-color: var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:active {
-  background-color: var(--ooui-color-base70);
-  border-left-color: var(--ooui-color-base70);
+  background-color: var(--background-color-framed--active);
+  border-left-color: var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog-actions-other .oo-ui-actionWidget.oo-ui-buttonElement {
   margin-left: 0;
@@ -4495,7 +4495,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-processDialog-errors-title {
   font-size: 1.5em;
-  color: var(--ooui-color-base0);
+  color: var(--color-base--emphasized);
   margin-bottom: 1.5em;
   text-align: center;
 }
@@ -4582,7 +4582,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   transition: opacity ease-out 250ms;
 }
 .oo-ui-windowManager-modal > .oo-ui-dialog > .oo-ui-window-frame {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   opacity: 0;
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -4608,7 +4608,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-height: 100%;
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   max-height: calc( 100% - 2em );
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
@@ -4621,7 +4621,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */

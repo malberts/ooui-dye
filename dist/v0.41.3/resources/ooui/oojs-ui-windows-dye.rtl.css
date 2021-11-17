@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-15T19:10:01Z
+ * Date: 2021-11-17T22:30:18Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -115,7 +115,7 @@
 .oo-ui-messageDialog-content > .oo-ui-window-foot {
   /* For some reason %60outline` in this file is throwing warnings, but not elsewhere */
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  outline: 1px solid var(--ooui-color-base50);
+  outline: 1px solid var(--border-color-base);
 }
 .oo-ui-messageDialog-title,
 .oo-ui-messageDialog-message {
@@ -125,11 +125,11 @@
 }
 .oo-ui-messageDialog-title {
   font-size: 1.5em;
-  color: var(--ooui-color-base0);
+  color: var(--color-base--emphasized);
 }
 .oo-ui-messageDialog-message {
   font-size: 1.1em;
-  color: var(--ooui-color-base10);
+  color: var(--color-base);
   text-align: right;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget {
@@ -159,7 +159,7 @@
   background-color: rgba(212, 83, 83, 0.1);
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget {
-  border-left: 1px solid var(--ooui-color-base50);
+  border-left: 1px solid var(--border-color-base);
   margin: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:first-child > .oo-ui-buttonElement-button {
@@ -175,7 +175,7 @@
   border-radius: 0 0 2px 2px;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget {
-  border-bottom: 1px solid var(--ooui-color-base50);
+  border-bottom: 1px solid var(--border-color-base);
   margin: 0;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget:last-child {
@@ -227,7 +227,7 @@
 .oo-ui-processDialog-content .oo-ui-window-head,
 .oo-ui-processDialog-content .oo-ui-window-foot {
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
-  outline: 1px solid var(--ooui-color-base70);
+  outline: 1px solid var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-content .oo-ui-window-head {
   min-height: 2.85714286em;
@@ -261,11 +261,11 @@
 }
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:hover,
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:active {
-  border-left-color: var(--ooui-color-base70);
+  border-left-color: var(--border-color-dialog-bar);
   border-right-color: transparent;
 }
 .oo-ui-processDialog .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-iconElement > .oo-ui-buttonElement-button {
   min-height: 2.85714286em;
@@ -283,20 +283,20 @@
   padding-right: 2.42857143em;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget > .oo-ui-buttonElement-button {
-  border-right-color: var(--ooui-color-base70);
+  border-right-color: var(--border-color-dialog-bar);
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:hover,
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:active {
-  border-right-color: var(--ooui-color-base70);
+  border-right-color: var(--border-color-dialog-bar);
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget:not( .oo-ui-flaggedElement-progressive ):not( .oo-ui-flaggedElement-destructive ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-actionWidget > .oo-ui-buttonElement-button,
 .oo-ui-processDialog-actions-other .oo-ui-actionWidget > .oo-ui-buttonElement-button {
-  border-left-color: var(--ooui-color-base70);
+  border-left-color: var(--border-color-dialog-bar);
   border-right-color: transparent;
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button {
@@ -304,15 +304,15 @@
   border-left-color: transparent;
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:hover {
-  background-color: var(--ooui-color-base90);
-  border-left-color: var(--ooui-color-base70);
+  background-color: var(--background-color-framed);
+  border-left-color: var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:active {
-  background-color: var(--ooui-color-base70);
-  border-left-color: var(--ooui-color-base70);
+  background-color: var(--background-color-framed--active);
+  border-left-color: var(--border-color-dialog-bar);
 }
 .oo-ui-processDialog-actions-safe .oo-ui-widget-enabled.oo-ui-iconElement:not( .oo-ui-labelElement ) > .oo-ui-buttonElement-button:focus {
-  border-color: var(--ooui-color-accent50);
+  border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog-actions-other .oo-ui-actionWidget.oo-ui-buttonElement {
   margin-left: 0;
@@ -326,7 +326,7 @@
 }
 .oo-ui-processDialog-errors-title {
   font-size: 1.5em;
-  color: var(--ooui-color-base0);
+  color: var(--color-base--emphasized);
   margin-bottom: 1.5em;
   text-align: center;
 }
@@ -413,7 +413,7 @@
   transition: opacity ease-out 250ms;
 }
 .oo-ui-windowManager-modal > .oo-ui-dialog > .oo-ui-window-frame {
-  background-color: var(--ooui-color-base100);
+  background-color: var(--background-color-base);
   opacity: 0;
   -webkit-transform: scale(0.5);
   -moz-transform: scale(0.5);
@@ -439,7 +439,7 @@
   max-height: 100%;
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   max-height: calc( 100% - 2em );
-  border: 1px solid var(--ooui-color-base50);
+  border: 1px solid var(--border-color-base);
   border-radius: 2px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
