@@ -9,14 +9,21 @@ base=oojs-ui/src/themes/dye
 # Copy base variables
 cp oojs-ui/node_modules/wikimedia-ui-base/wikimedia-ui-base.less $base/dye-ui-base.less
 
-# wmui color variables
-sed -Ei 's|@wmui([^:]*):(\s+).*|@wmui\1:\2var( --ooui\1 );|g' $base/dye-ui-base.less
+# Replace variables with CSS Properties
+sed -Ei 's|^@(color-[^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/dye-ui-base.less
+sed -Ei 's|^@(background-color-[^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/dye-ui-base.less
+sed -Ei 's|^@(border-color-[^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/dye-ui-base.less
 
-# rgba colors
-sed -Ei 's|@([^:]*):(\s*)rgba[^;]*;|@\1:\2var( --ooui-\1 );|g' $base/dye-ui-base.less
+sed -Ei 's|^@(color-[^:]+):(\s*).*@wmui[^;]*;|@\1:\2var( --\1 );|g' $base/common.less
+sed -Ei 's|^@(background-color-[^:]+):(\s*).*@wmui[^;]*;|@\1:\2var( --\1 );|g' $base/common.less
+sed -Ei 's|^@(border-color-[^:]+):(\s*).*@wmui[^;]*;|@\1:\2var( --\1 );|g' $base/common.less
 
-# hex colors
-sed -Ei 's|@([^:]*):(\s*)#([a-z0-9]+);|@\1:\2var( --\1 );|g' $base/common.less
+# Hardcoded use of colors
+sed -Ei 's|^(.*:.*)@wmui-color-accent50|\1var( --color-primary )|g' $base/dye-ui-base.less
+sed -Ei 's|^(@border-)([^:]*)(:.*)@wmui-color-[a-z0-9]+|\1\2\3var( --border-color-\2 )|g' $base/common.less
+
+# Comment unused variables
+sed -Ei 's|^@(wmui\|width-breakpoint)|// @\1|g' $base/dye-ui-base.less
 
 # Unusable: mix()
 # v0.39.3
@@ -36,8 +43,7 @@ sed -i 's|lighten( @active, 60% )|@active-bg|g' $base/common.less
 sed -Ei 's|(.mw-framed-button-colored.*@color-)(.*)(--active,)|\1\2\3 @background-color-\2,|g' $base/elements.less
 sed -Ei 's|(.mw-tool-colored.*@color-)(.*)(--active,)|\1\2\3 @background-color-\2,|g' $base/tools.less
 
-
-# unusable: darken()
+# Unusable: darken()
 sed -i 's|darken( @border-color-base, 14% )|@border-color-base--active|g' $base/widgets.less;
 
 # Replace import
