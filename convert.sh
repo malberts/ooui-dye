@@ -19,6 +19,9 @@ sed -Ei 's|^@(background-color-[^:]+):(\s*).*@wmui[^;]*;|@\1:\2var( --\1 );|g' $
 sed -Ei 's|^@(border-color-[^:]+):(\s*).*@wmui[^;]*;|@\1:\2var( --\1 );|g' $base/common.less
 
 # Hardcoded use of colors
+# v0.39.3
+sed -Ei 's|^(.*:.*)@wmui-color-yellow50|\1var( --border-color-warning )|g' $base/dye-ui-base.less
+# v0.40.0
 sed -Ei 's|^(.*:.*)@wmui-color-accent50|\1var( --color-primary )|g' $base/dye-ui-base.less
 sed -Ei 's|^(@border-)([^:]*)(:.*)@wmui-color-[a-z0-9]+|\1\2\3var( --border-color-\2 )|g' $base/common.less
 
