@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:30:21Z
+ * Date: 2021-11-18T20:41:00Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -222,7 +222,7 @@
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-buttonSelectWidget {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   margin-left: 8px;
   z-index: 0;
   position: relative;
@@ -240,13 +240,13 @@
   border-radius: 0;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:first-child .oo-ui-buttonElement-button {
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-right-radius: var(--border-radius-base);
+  border-top-right-radius: var(--border-radius-base);
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:last-child .oo-ui-buttonElement-button {
   margin-left: 0;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: var(--border-radius-base);
+  border-top-left-radius: var(--border-radius-base);
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   border-right-color: var(--border-color-filled--disabled);
@@ -515,7 +515,7 @@
 .oo-ui-selectFileWidget-dropTarget {
   background-color: var(--background-color-base);
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   vertical-align: middle;
   overflow: hidden;
 }
@@ -712,8 +712,8 @@
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget {
   border-width: 1px 1px 0 1px;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
+  border-top-right-radius: var(--border-radius-base);
+  border-top-left-radius: var(--border-radius-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
   border-bottom: 2px solid transparent;
@@ -762,7 +762,7 @@
   box-shadow: inset 0 -2px 0 0 var(--color-primary--active);
 }
 .oo-ui-tabSelectWidget-frameless.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   box-shadow: inset 0 0 0 2px var(--color-primary);
 }
 
@@ -815,7 +815,7 @@
   min-height: 32px;
   margin-left: 8px;
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding: 0 8px;
   line-height: 1;
 }
