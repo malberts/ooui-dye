@@ -15,7 +15,6 @@ jobs:
           - v0.41.3
           - v0.42.0
           - v0.42.1
-          - ""
     env:
       VERSION: Unknown
 
