@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:30:15Z
+ * Date: 2021-11-18T20:41:06Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -161,16 +161,16 @@
   margin: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:first-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 var(--border-radius-base);
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child {
   border-right-width: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 0;
+  border-radius: 0 0 var(--border-radius-base) 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:only-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget {
   border-bottom: 1px solid var(--border-color-base);
@@ -180,7 +180,7 @@
   border-bottom-width: 0;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
 }
 
 /* stylelint-disable selector-no-vendor-prefix */
@@ -434,6 +434,6 @@
   /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   max-height: calc( 100% - 2em );
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
