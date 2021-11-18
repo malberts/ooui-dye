@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:31:04Z
+ * Date: 2021-11-18T20:41:55Z
  */
 .oo-ui-element-hidden {
   display: none !important;
@@ -50,7 +50,7 @@
 .oo-ui-buttonElement > .oo-ui-buttonElement-button {
   position: relative;
   min-height: 2.28571429em;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding-top: 2.14285714em;
   font-weight: bold;
   text-decoration: none;
@@ -219,7 +219,7 @@
 .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button {
   border-style: solid;
   border-width: 1px;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -659,11 +659,11 @@
   margin-right: 8px;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input {
-  border-radius: 2px 0 0 2px;
+  border-radius: var(--border-radius-base) 0 0 var(--border-radius-base);
   position: relative;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-framed > .oo-ui-buttonElement-button {
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 var(--border-radius-base) var(--border-radius-base) 0;
   margin-left: -1px;
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-frameless {
@@ -783,7 +783,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-panelLayout-framed {
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
 }
 .oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
   margin: 12px 0;
@@ -1012,7 +1012,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-buttonGroupWidget {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   margin-right: 8px;
   z-index: 0;
   position: relative;
@@ -1034,13 +1034,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-radius: 0;
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed:first-child .oo-ui-buttonElement-button {
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: var(--border-radius-base);
+  border-top-left-radius: var(--border-radius-base);
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed:last-child .oo-ui-buttonElement-button {
   margin-right: 0;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-right-radius: var(--border-radius-base);
+  border-top-right-radius: var(--border-radius-base);
 }
 .oo-ui-buttonGroupWidget .oo-ui-buttonElement-framed.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   border-left-color: var(--border-color-filled--disabled);
@@ -1144,7 +1144,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-popupWidget-popup {
   background-color: var(--background-color-base);
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 @supports ( filter: drop-shadow( 0 0 0 ) ) {
@@ -1321,7 +1321,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 1.42857143em;
   border-color: var(--border-color-base--active);
   border-style: solid;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   border-width: 0;
 }
 :root .oo-ui-checkboxInputWidget [type='checkbox'] + span {
@@ -1436,7 +1436,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-sizing: border-box;
   height: 2.28571429em;
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding-left: 12px;
   padding-right: 2.14285714em;
   font-size: inherit;
@@ -1677,7 +1677,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: var(--color-base--emphasized);
   margin: 0;
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding: 6px 8px;
   font-size: inherit;
   font-family: inherit;
@@ -1812,7 +1812,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-top: -1px;
   margin-bottom: -1px;
   border: 1px solid var(--border-color-base);
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 .oo-ui-menuSelectWidget.oo-ui-clippableElement-clippable {
@@ -1902,7 +1902,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-dropdownWidget-handle {
   min-height: 2.28571429em;
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding: 6px 2.14285714em 6px 12px;
   line-height: 1;
 }
@@ -2022,8 +2022,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-comboBoxInputWidget.oo-ui-comboBoxInputWidget-empty .oo-ui-inputWidget-input,
 .oo-ui-comboBoxInputWidget-php .oo-ui-inputWidget-input {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: var(--border-radius-base);
+  border-bottom-right-radius: var(--border-radius-base);
   border-right-width: 1px;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement {
@@ -2270,7 +2270,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:31:04Z
+ * Date: 2021-11-18T20:41:55Z
  */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ).oo-ui-widget {
   cursor: move;
@@ -2464,7 +2464,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-buttonSelectWidget {
   display: inline-block;
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   margin-right: 8px;
   z-index: 0;
   position: relative;
@@ -2482,13 +2482,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-radius: 0;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:first-child .oo-ui-buttonElement-button {
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
+  border-bottom-left-radius: var(--border-radius-base);
+  border-top-left-radius: var(--border-radius-base);
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:last-child .oo-ui-buttonElement-button {
   margin-right: 0;
-  border-bottom-right-radius: 2px;
-  border-top-right-radius: 2px;
+  border-bottom-right-radius: var(--border-radius-base);
+  border-top-right-radius: var(--border-radius-base);
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget.oo-ui-widget-disabled + .oo-ui-widget-disabled > .oo-ui-buttonElement-button {
   border-left-color: var(--border-color-filled--disabled);
@@ -2748,7 +2748,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-selectFileWidget-dropTarget {
   background-color: var(--background-color-base);
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   vertical-align: middle;
   overflow: hidden;
 }
@@ -2945,8 +2945,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget {
   border-width: 1px 1px 0 1px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
+  border-top-left-radius: var(--border-radius-base);
+  border-top-right-radius: var(--border-radius-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
   border-bottom: 2px solid transparent;
@@ -2997,7 +2997,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-shadow: inset 0 -2px 0 0 var(--color-progressive--active);
 }
 .oo-ui-tabSelectWidget-frameless.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   box-shadow: inset 0 0 0 2px var(--color-primary);
 }
 
@@ -3049,7 +3049,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   min-height: 2.28571429em;
   margin-right: 8px;
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   padding: 0 8px;
   line-height: 1;
 }
@@ -3317,7 +3317,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:31:04Z
+ * Date: 2021-11-18T20:41:55Z
  */
 .oo-ui-tool {
   -webkit-box-sizing: border-box;
@@ -4014,7 +4014,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:31:04Z
+ * Date: 2021-11-18T20:41:55Z
  */
 
 .oo-ui-window {
@@ -4161,16 +4161,16 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:first-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 0 2px;
+  border-radius: 0 0 0 var(--border-radius-base);
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child {
   border-right-width: 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 0;
+  border-radius: 0 0 var(--border-radius-base) 0;
 }
 .oo-ui-messageDialog-actions-horizontal .oo-ui-actionWidget:only-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget {
   border-bottom: 1px solid var(--border-color-base);
@@ -4180,7 +4180,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-bottom-width: 0;
 }
 .oo-ui-messageDialog-actions-vertical .oo-ui-actionWidget:last-child > .oo-ui-buttonElement-button {
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 var(--border-radius-base) var(--border-radius-base);
 }
 
 .oo-ui-processDialog-location {
@@ -4432,7 +4432,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   max-height: 100%;
   max-height: calc( 100% - 2em );
   border: 1px solid var(--border-color-base);
-  border-radius: 2px;
+  border-radius: var(--border-radius-base);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -4444,7 +4444,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2021-11-17T22:31:04Z
+ * Date: 2021-11-18T20:41:55Z
  */
 .oo-ui-icon-arrowNext {
   background-image: url('themes/dye/images/icons/arrowNext-ltr.png');
