@@ -21,29 +21,38 @@ jobs:
     steps:
       - name: Checkout Dye
         uses: actions/checkout@v2
+        
       - name: Checkout OOUI
         uses: actions/checkout@v2
         with:
           repository: wikimedia/oojs-ui
           ref: ${{ matrix.tag }}
           path: oojs-ui
+      
+      - run: ls -l
+          
       - uses: actions/setup-node@v2
         with:
           node-version: 16
           cache: 'npm'
           cache-dependency-path: oojs-ui/package-lock.json
+          
       - run: cd ooui-js && npm install
+      
       - uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
+          
       - run: make create
       - run: make convert
       - run: make build
+      
       - name: Get version
         run: |
           echo "VERSION=$(grep -oP 'OOUI \Kv.*' oojs-ui/dist/oojs-ui-core-dye.css)" >> $GITHUB_ENV
       - run: make copy TAG=${{ env.VERSION }}
       - run: make check-diff
+      
       - name: Create pull request
         uses: peter-evans/create-pull-request@v3
         with:
