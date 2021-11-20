@@ -1,6 +1,12 @@
 #!/bin/bash
 
 ##
+# Disable Apex to save time.
+##
+sed -Ei "s|^(\s+wikimediaui: 'WikimediaUI'),|\1|g" oojs-ui/Gruntfile.js
+sed -Ei "s|^(\s+apex: 'Apex')|//\1|g" oojs-ui/Gruntfile.js
+
+##
 # Convert the WikimediaUI theme to use CSS custom properties for colors.
 ##
 
