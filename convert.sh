@@ -25,6 +25,9 @@ sed -Ei 's|^(.*:.*)@wmui-color-yellow50|\1var( --border-color-warning )|g' $base
 sed -Ei 's|^(.*:.*)@wmui-color-accent50|\1var( --color-primary )|g' $base/variables.less
 sed -Ei 's|^(@border-)([^:]*)(:.*)@wmui-color-[a-z0-9]+|\1\2\3var( --border-color-\2 )|g' $base/common.less
 
+# Fonts
+sed -Ei 's|^@(font-family-[^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/variables.less
+
 # Comment unused variables
 sed -Ei 's|^@(wmui\|width-breakpoint)|// @\1|g' $base/variables.less
 
