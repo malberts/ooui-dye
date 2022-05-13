@@ -1,7 +1,7 @@
 # OOUI Dye Theme
 
 A custom [OOUI] theme based on the WikimediaUI theme, but using CSS Custom Properties for color overrides.
-Custom properties are based on [wikimedia-ui-base.css].
+Custom property names are based on [wikimedia-ui-base.css].
 
 ## Compatibility
 | Mediawiki | OOUI    |
