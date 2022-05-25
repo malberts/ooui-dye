@@ -6,8 +6,6 @@ Custom property names are based on [wikimedia-ui-base.css].
 ## Compatibility
 | Mediawiki | OOUI    |
 |-----------|---------|
-| 1.35      | v0.39.3 |
-| 1.36      | v0.41.3 |
 | 1.37      | v0.42.0 |
 | 1.38      | v0.42.1 |
 | 1.38      | v0.43.0 |
