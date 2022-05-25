@@ -23,3 +23,5 @@ copy:
 
 check-diff:
 	bash check-diff.sh
+
+all: setup create convert build copy

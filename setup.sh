@@ -4,6 +4,7 @@ if [ -d "oojs-ui" ]; then
     cd oojs-ui
     git reset --hard
     git clean -fd
+    git checkout master
     git pull
 else
     git clone https://github.com/wikimedia/oojs-ui.git
@@ -18,4 +19,5 @@ tag=${1:-$latestTag}
 git checkout $tag
 
 npm install
-composer install
+rm -rf oojs-ui/vendor oojs-ui/composer.lock
+php8.0 $(which composer) install
