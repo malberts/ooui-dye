@@ -19,5 +19,4 @@ tag=${1:-$latestTag}
 git checkout $tag
 
 npm install
-rm -rf oojs-ui/vendor oojs-ui/composer.lock
 php8.0 $(which composer) install
