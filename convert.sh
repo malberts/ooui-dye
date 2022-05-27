@@ -69,21 +69,21 @@ for file in elements layouts tools widgets windows; do
   # Negative parantheses
   sed -Ei 's|( +)\-\(([^()]*)\)|\1calc( -1 * \2 )|g' $base/$file.less
   # Unit
-  sed -i 's|unit(|(|g' $base/$file.less
+  sed -Ei 's|unit\( ([^)]+) \)|\1|g' $base/$file.less
   # Duplicate calc
   sed -Ei 's|(calc\(.*)calc\( ([^)]+) \)|\1\2|g' $base/$file.less
 done
 
 # Manual fixes
-sed -Ei 's|(@size-indicator \+ \( 2 \* \( @padding-horizontal-base \) / @ooui-font-size-browser / @ooui-font-size-base)|calc( \1 )|g' $base/widgets.less
+sed -Ei 's|(@size-indicator \+ \( 2 \* @padding-horizontal-base / @ooui-font-size-browser / @ooui-font-size-base)|calc( \1 )|g' $base/widgets.less
 sed -Ei "s|\( (2 \* @border-width-base) \)|calc( \1 )|g" $base/widgets.less
 sed -Ei "s|\( (@padding-vertical-base - 2 \* @border-width-base) \)|calc( \1 )|g" $base/widgets.less
 sed -Ei "s|(@size-base - 2 \* \( @size-modifier-border \))|calc( \1 )|g" $base/widgets.less
 sed -Ei "s|(@start-tool-icon - \( @size-toolbar-narrow-modifier / 2 \))|calc( \1 )|g" $base/tools.less
 sed -Ei "s|0 \( (@padding-horizontal-base-iconized - @size-toolbar-narrow-modifier) \)|0 calc( \1 )|g" $base/tools.less
 sed -Ei "s|(\( @padding-horizontal-base-iconized \* 1.5 \) - @size-toolbar-narrow-modifier)|calc( \1 )|g" $base/tools.less
-sed -Ei "s|\( (@size-dialog-bar--desktop / \( @font-size-dialog-process-title \)) \)|calc( \1 )|g" $base/windows.less
-sed -Ei "s|\( (@size-dialog-bar--mobile / \( @font-size-dialog-process-title \)) \)|calc( \1 )|g" $base/windows.less
+sed -Ei "s|\( (@size-dialog-bar--desktop / @font-size-dialog-process-title) \)|calc( \1 )|g" $base/windows.less
+sed -Ei "s|\( (@size-dialog-bar--mobile / @font-size-dialog-process-title) \)|calc( \1 )|g" $base/windows.less
 
 
 ##
