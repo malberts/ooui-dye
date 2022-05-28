@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-05-13T17:21:51Z
+ * Date: 2022-05-28T01:43:53Z
  */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ),
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ).oo-ui-widget {
@@ -62,10 +62,10 @@
   padding: 20px;
 }
 .oo-ui-bookletLayout-outlinePanel > .oo-ui-outlineControlsWidget {
-  border-top: 1px solid var(--border-color-dialog-bar);
+  border-top: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
 }
 .oo-ui-bookletLayout > .oo-ui-menuLayout-menu {
-  border-left: 1px solid var(--border-color-dialog-bar);
+  border-left: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
 }
 
 .oo-ui-indexLayout {
@@ -85,10 +85,10 @@
   padding: 20px;
 }
 .oo-ui-indexLayout.oo-ui-menuLayout.oo-ui-menuLayout-expanded > .oo-ui-menuLayout-menu {
-  height: 2.64285714em;
+  height: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-indexLayout.oo-ui-menuLayout.oo-ui-menuLayout-expanded > .oo-ui-menuLayout-content {
-  top: 2.64285714em;
+  top: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 
 .oo-ui-menuLayout {
@@ -119,18 +119,18 @@
 }
 .oo-ui-menuLayout > .oo-ui-menuLayout-menu,
 .oo-ui-menuLayout > .oo-ui-menuLayout-content {
-  -webkit-transition: height ease-out 250ms, width ease-out 250ms, top ease-out 250ms, right ease-out 250ms, left ease-out 250ms, bottom ease-out 250ms;
-  transition: height ease-out 250ms, width ease-out 250ms, top ease-out 250ms, right ease-out 250ms, left ease-out 250ms, bottom ease-out 250ms;
+  -webkit-transition: height var(--transition-ease-out-medium), width var(--transition-ease-out-medium), top var(--transition-ease-out-medium), right var(--transition-ease-out-medium), left var(--transition-ease-out-medium), bottom var(--transition-ease-out-medium);
+  transition: height var(--transition-ease-out-medium), width var(--transition-ease-out-medium), top var(--transition-ease-out-medium), right var(--transition-ease-out-medium), left var(--transition-ease-out-medium), bottom var(--transition-ease-out-medium);
 }
 .oo-ui-menuLayout > .oo-ui-menuLayout-menu {
-  height: 14.28571429em;
-  width: 14.28571429em;
+  height: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  width: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-menuLayout > .oo-ui-menuLayout-content {
-  top: 14.28571429em;
-  right: 14.28571429em;
-  left: 14.28571429em;
-  bottom: 14.28571429em;
+  top: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  right: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  left: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  bottom: calc(200 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-menuLayout.oo-ui-menuLayout-hideMenu > .oo-ui-menuLayout-menu {
   width: 0 !important;
@@ -201,7 +201,7 @@
   margin-left: 8px;
   z-index: 0;
   position: relative;
-  padding-bottom: 1px;
+  padding-bottom: var(--border-width-base);
 }
 .oo-ui-buttonSelectWidget:last-child {
   margin-left: 0;
@@ -210,8 +210,8 @@
   outline: 0;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget .oo-ui-buttonElement-button {
-  margin-left: -1px;
-  margin-bottom: -1px;
+  margin-left: calc(-1 * var(--border-width-base));
+  margin-bottom: calc(-1 * var(--border-width-base));
   border-radius: 0;
 }
 .oo-ui-buttonSelectWidget .oo-ui-buttonOptionWidget:first-child .oo-ui-buttonElement-button {
@@ -229,7 +229,7 @@
 .oo-ui-buttonSelectWidget.oo-ui-widget-enabled:focus .oo-ui-buttonOptionWidget.oo-ui-optionWidget-selected .oo-ui-buttonElement-button {
   border-color: var(--border-color-base--focus);
   box-shadow: inset 0 0 0 1px var(--color-primary), inset 0 0 0 2px var(--color-base--inverted);
-  outline: 1px solid transparent;
+  outline: var(--outline-base--focus);
 }
 .oo-ui-buttonSelectWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover,
 .oo-ui-buttonSelectWidget.oo-ui-widget-enabled .oo-ui-buttonElement.oo-ui-widget-enabled > .oo-ui-buttonElement-button:active {
@@ -261,7 +261,7 @@
   color: var(--color-base--active);
 }
 .oo-ui-toggleButtonWidget.oo-ui-widget-enabled.oo-ui-buttonElement-frameless.oo-ui-toggleWidget-on .oo-ui-buttonElement-button > .oo-ui-iconElement-icon:not( .oo-ui-image-invert ) {
-  opacity: 1;
+  opacity: var(--opacity-icon-base--selected);
 }
 
 .oo-ui-toggleSwitchWidget {
@@ -274,14 +274,14 @@
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   background-color: var(--background-color-framed);
-  width: 3.5em;
+  width: calc(1.5em + 2em);
   min-height: 26px;
   height: 2em;
-  border: 1px solid var(--border-color-base--active);
+  border: var(--border-width-base) var(--border-style-base) var(--border-color-base--active);
   border-radius: 1em;
   margin-left: 8px;
-  -webkit-transition: background-color 250ms, border-color 250ms;
-  transition: background-color 250ms, border-color 250ms;
+  -webkit-transition: background-color var(--transition-ease-medium), border-color var(--transition-ease-medium);
+  transition: background-color var(--transition-ease-medium), border-color var(--transition-ease-medium);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled {
   cursor: pointer;
@@ -303,36 +303,36 @@
   right: 1px;
   bottom: 1px;
   left: 1px;
-  border: 1px solid transparent;
+  border: 1px var(--border-style-base) transparent;
   border-radius: 1em;
   z-index: 1;
-  -webkit-transition: border-color 250ms;
-  transition: border-color 250ms;
+  -webkit-transition: border-color var(--transition-ease-medium);
+  transition: border-color var(--transition-ease-medium);
 }
 .oo-ui-toggleSwitchWidget-grip {
-  top: 0.35714286em;
+  top: calc(5 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   min-width: 16px;
-  width: 1.14285714em;
+  width: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   min-height: 16px;
-  height: 1.14285714em;
-  border-radius: 1.14285714em;
-  -webkit-transition: background-color 250ms, right 100ms, margin-right 100ms;
-  transition: background-color 250ms, right 100ms, margin-right 100ms;
+  height: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  border-radius: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  -webkit-transition: background-color var(--transition-ease-medium), right var(--transition-base), margin-right var(--transition-base);
+  transition: background-color var(--transition-ease-medium), right var(--transition-base), margin-right var(--transition-base);
 }
 .oo-ui-toggleSwitchWidget-glow {
   display: none;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-toggleWidget-off .oo-ui-toggleSwitchWidget-grip {
-  right: 0.35714286em;
+  right: calc(5 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   margin-right: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-toggleWidget-on .oo-ui-toggleSwitchWidget-grip {
-  right: 1.9em;
+  right: calc(1.5em + 0.4em);
   margin-right: -2px;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled .oo-ui-toggleSwitchWidget-grip {
   background-color: var(--background-color-framed);
-  border: 1px solid var(--border-color-base--active);
+  border: var(--border-width-base) var(--border-style-base) var(--border-color-base--active);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:hover {
   background-color: var(--background-color-framed--hover);
@@ -358,7 +358,7 @@
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:focus {
   border-color: var(--color-primary);
-  box-shadow: inset 0 0 0 1px var(--color-primary);
+  box-shadow: var(--box-shadow-base--focus);
   outline: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-enabled:focus .oo-ui-toggleSwitchWidget-grip {
@@ -394,8 +394,8 @@
   outline: 0;
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-disabled.oo-ui-toggleWidget-off .oo-ui-toggleSwitchWidget-grip {
-  border: 1px solid var(--border-color-filled--disabled);
-  box-shadow: inset 0 0 0 1px var(--color-filled--disabled);
+  border: var(--border-width-base) var(--border-style-base) var(--border-color-filled--disabled);
+  box-shadow: var(--box-shadow-filled--disabled);
 }
 .oo-ui-toggleSwitchWidget.oo-ui-widget-disabled.oo-ui-toggleWidget-on .oo-ui-toggleSwitchWidget-grip {
   background-color: var(--background-color-base);
@@ -479,7 +479,7 @@
 }
 .oo-ui-selectFileWidget-dropTarget {
   background-color: var(--background-color-base);
-  border: 1px solid var(--border-color-base);
+  border: var(--border-base);
   border-radius: var(--border-radius-base);
   vertical-align: middle;
   overflow: hidden;
@@ -488,7 +488,7 @@
   border-style: dashed;
 }
 .oo-ui-selectFileWidget-dropTarget .oo-ui-pendingElement-pending {
-  background-size: 1.42857143em 1.42857143em;
+  background-size: calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-selectFileWidget-buttonOnly {
   width: auto;
@@ -496,15 +496,15 @@
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-dropTarget {
   background-color: var(--background-color-base);
-  -webkit-transition: background-color 250ms, color 250ms, border-color 250ms;
-  transition: background-color 250ms, color 250ms, border-color 250ms;
+  -webkit-transition: background-color var(--transition-ease-medium), color var(--transition-ease-medium), border-color var(--transition-ease-medium);
+  transition: background-color var(--transition-ease-medium), color var(--transition-ease-medium), border-color var(--transition-ease-medium);
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-dropTarget:hover {
   border-color: var(--border-color-input--hover);
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled .oo-ui-selectFileInputWidget-info > .oo-ui-inputWidget-input {
-  -webkit-transition: background-color 250ms, color 250ms;
-  transition: background-color 250ms, color 250ms;
+  -webkit-transition: background-color var(--transition-ease-medium), color var(--transition-ease-medium);
+  transition: background-color var(--transition-ease-medium), color var(--transition-ease-medium);
 }
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-canDrop.oo-ui-selectFileWidget-dropTarget,
 .oo-ui-selectFileWidget.oo-ui-widget-enabled.oo-ui-selectFileWidget-canDrop .oo-ui-selectFileInputWidget-info > .oo-ui-inputWidget-input {
@@ -530,9 +530,9 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 11px 12px;
-  -webkit-transition: background-color 100ms, color 100ms;
-  transition: background-color 100ms, color 100ms;
+  padding: 11px var(--padding-horizontal-base);
+  -webkit-transition: background-color var(--transition-base), color var(--transition-base);
+  transition: background-color var(--transition-base), color var(--transition-base);
 }
 .oo-ui-outlineOptionWidget.oo-ui-optionWidget-highlighted {
   background-color: var(--background-color-base--hover);
@@ -591,8 +591,8 @@
 }
 .oo-ui-outlineControlsWidget-items > .oo-ui-buttonWidget,
 .oo-ui-outlineControlsWidget-movers > .oo-ui-buttonWidget {
-  height: 2.28571429em;
-  width: 2.28571429em;
+  height: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  width: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   margin: 0 !important;
   /* stylelint-disable-line declaration-no-important */
 }
@@ -610,15 +610,15 @@
   background-color: var(--background-color-tabs);
 }
 .oo-ui-tabSelectWidget-frameless {
-  box-shadow: inset 0 -1px 0 0 var(--border-color-base);
+  box-shadow: inset 0 calc(-1 * var(--border-width-base)) 0 0 var(--border-color-base);
 }
 .oo-ui-tabSelectWidget-mobile:after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 18px;
-  height: 2.28571429em;
+  width: calc(6px * 3);
+  height: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   pointer-events: none;
 }
 .oo-ui-tabSelectWidget-mobile.oo-ui-tabSelectWidget-framed:after {
@@ -632,7 +632,7 @@
   background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0, #fff 100%);
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0, #fff 100%);
   background-color: transparent;
-  bottom: 0.14285714em;
+  bottom: calc(calc(1 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) * 2);
 }
 .oo-ui-tabSelectWidget.oo-ui-widget-enabled:focus {
   outline: 0;
@@ -647,34 +647,34 @@
   margin: 6px 6px 0 0;
   padding: 0 8px;
   border-color: transparent;
-  border-style: solid;
+  border-style: var(--border-style-base);
   font-weight: bold;
   line-height: 1;
-  -webkit-transition: background-color 100ms, color 100ms, border-color 100ms;
-  transition: background-color 100ms, color 100ms, border-color 100ms;
+  -webkit-transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+  transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
 }
 .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
   cursor: default;
 }
 .oo-ui-tabOptionWidget > .oo-ui-labelElement-label {
   color: inherit;
-  padding: 5px 5px;
-  line-height: 1.42857143em;
+  padding: var(--padding-vertical-base) 5px;
+  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   text-decoration: inherit;
 }
 .oo-ui-tabSelectWidget-mobile .oo-ui-tabOptionWidget:last-child {
-  margin-left: 18px;
+  margin-left: calc(6px * 3);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget {
-  border-width: 1px 1px 0 1px;
+  border-width: var(--border-width-base) var(--border-width-base) 0 var(--border-width-base);
   border-top-right-radius: var(--border-radius-base);
   border-top-left-radius: var(--border-radius-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
-  border-bottom: 2px solid transparent;
-  padding: 5px 5px 3px;
-  -webkit-transition: border-color 100ms;
-  transition: border-color 100ms;
+  border-bottom: calc(2 * var(--border-width-base)) var(--border-style-base) transparent;
+  padding: var(--padding-vertical-base) 5px calc(var(--padding-vertical-base) - 2 * var(--border-width-base));
+  -webkit-transition: border-color var(--transition-base);
+  transition: border-color var(--transition-base);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
   background-color: var(--background-color-base);
@@ -698,23 +698,23 @@
   border-bottom-color: var(--border-color-base--focus);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget {
-  margin: 6px 0 -1px 6px;
-  border-width: 1px 0;
+  margin: 6px 6px calc(-1 * var(--border-width-base)) 0;
+  border-width: var(--border-width-base) 0;
   box-shadow: inset 0 0 0 0 var(--color-primary);
-  -webkit-transition: color 100ms, box-shadow 100ms;
-  transition: color 100ms, box-shadow 100ms;
+  -webkit-transition: color var(--transition-base), box-shadow var(--transition-base);
+  transition: color var(--transition-base), box-shadow var(--transition-base);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
   color: var(--color-primary);
-  box-shadow: inset 0 -2px 0 0 var(--color-primary);
+  box-shadow: inset 0 calc(-1 * 2px) 0 0 var(--color-primary);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-widget-enabled:hover {
   color: var(--color-primary--hover);
-  box-shadow: inset 0 -2px 0 0 var(--color-primary--hover);
+  box-shadow: inset 0 calc(-1 * 2px) 0 0 var(--color-primary--hover);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget.oo-ui-widget-enabled:active {
   color: var(--color-primary--active);
-  box-shadow: inset 0 -2px 0 0 var(--color-primary--active);
+  box-shadow: inset 0 calc(-1 * 2px) 0 0 var(--color-primary--active);
 }
 .oo-ui-tabSelectWidget-frameless.oo-ui-widget-enabled:focus .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
   border-radius: var(--border-radius-base);
@@ -724,8 +724,8 @@
 .oo-ui-tagMultiselectWidget {
   display: inline-block;
   position: relative;
-  width: 100%;
-  max-width: 50em;
+  width: var(--size-full);
+  max-width: var(--max-width-input);
   vertical-align: top;
 }
 .oo-ui-tagMultiselectWidget-handle {
@@ -765,11 +765,11 @@
 .oo-ui-tagMultiselectWidget-handle {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 32px;
+  min-height: var(--min-size-base);
   margin-left: 8px;
-  border: 1px solid var(--border-color-base);
+  border: var(--border-base);
   border-radius: var(--border-radius-base);
-  padding: 0 8px;
+  padding: 0 var(--padding-horizontal-input-text);
   line-height: 1;
 }
 .oo-ui-tagMultiselectWidget-handle:last-child {
@@ -779,20 +779,20 @@
   display: inline-block;
   max-width: 100%;
   margin-top: 4px;
-  margin-right: -0.14285714em;
+  margin-right: calc(-1 * 2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {
   background-color: transparent;
   color: var(--color-base--emphasized);
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 2.14285714em;
+  height: calc(calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - 2 * (calc(1 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em)));
   border: 0;
-  padding: 5px 0.57142857em 5px 0;
-  margin-top: -4px;
+  padding: var(--padding-vertical-base) 0 var(--padding-vertical-base) calc(8 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  margin-top: calc(-1 * 4px);
   font-family: inherit;
   font-size: inherit;
-  line-height: 1.42857143em;
+  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   vertical-align: top;
   /* stylelint-disable selector-no-vendor-prefix */
   /* stylelint-enable selector-no-vendor-prefix */
@@ -817,18 +817,18 @@
   outline: 0;
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input:first-child {
-  margin-right: 0.14285714em;
+  margin-right: calc(-1 * calc(-1 * 2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
   padding-right: 0;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-iconElement .oo-ui-tagMultiselectWidget-handle {
-  padding-right: 2.02857143em;
+  padding-right: calc(calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) + 2 * 0.3em);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-iconElement .oo-ui-tagMultiselectWidget-handle > .oo-ui-iconElement-icon {
   right: 0;
   margin: 0 0.3em;
 }
 .oo-ui-tagMultiselectWidget.oo-ui-indicatorElement .oo-ui-tagMultiselectWidget-handle {
-  padding-left: 2.40714286em;
+  padding-left: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) + 2 * 0.775em);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-indicatorElement .oo-ui-tagMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
   left: 0;
@@ -847,8 +847,8 @@
   background-color: var(--background-color-base);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled .oo-ui-tagMultiselectWidget-handle {
-  -webkit-transition: border-color 250ms, box-shadow 250ms;
-  transition: border-color 250ms, box-shadow 250ms;
+  -webkit-transition: border-color var(--transition-ease-medium), box-shadow var(--transition-ease-medium);
+  transition: border-color var(--transition-ease-medium), box-shadow var(--transition-ease-medium);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined:hover .oo-ui-tagMultiselectWidget-handle {
   border-color: var(--border-color-input--hover);
@@ -856,7 +856,7 @@
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-tagMultiselectWidget-focus .oo-ui-tagMultiselectWidget-handle {
   border-color: var(--border-color-base--focus);
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--color-primary);
+  box-shadow: var(--box-shadow-base--focus);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid .oo-ui-tagMultiselectWidget-handle,
 .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled.oo-ui-tagMultiselectWidget-inlined.oo-ui-flaggedElement-invalid:hover .oo-ui-tagMultiselectWidget-handle {
@@ -877,11 +877,11 @@
 .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle {
   background-color: var(--background-color-base--disabled);
   color: var(--color-base--disabled);
-  text-shadow: 0 1px 1px var(--color-base--inverted);
+  text-shadow: var(--text-shadow-base--disabled);
   border-color: var(--border-color-base--disabled);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle > .oo-ui-iconElement-icon {
-  opacity: 0.51;
+  opacity: var(--opacity-base--disabled);
 }
 .oo-ui-tagMultiselectWidget.oo-ui-widget-disabled .oo-ui-tagMultiselectWidget-handle > .oo-ui-indicatorElement-indicator {
   opacity: 0.15;
@@ -897,12 +897,12 @@
   box-sizing: border-box;
   width: auto;
   max-width: 100%;
-  height: 1.57142857em;
+  height: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   margin: 0 0 4px 4px;
-  border: 1px solid var(--border-color-base);
-  border-radius: 1.57142857em;
+  border: var(--border-base);
+  border-radius: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   padding: 0 8px;
-  line-height: 1.42857143em;
+  line-height: calc(calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - 2 * calc(1 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
   vertical-align: middle;
 }
 .oo-ui-tagItemWidget.oo-ui-labelElement .oo-ui-labelElement-label {
@@ -915,13 +915,13 @@
   cursor: text;
 }
 .oo-ui-tagItemWidget.oo-ui-labelElement .oo-ui-labelElement-label {
-  font-size: 0.92857143em;
-  line-height: 1.61538462em;
+  font-size: calc(13 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: calc(21 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em / calc(13 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled {
   color: var(--color-base);
-  -webkit-transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
-  transition: background-color 100ms, color 100ms, border-color 100ms, box-shadow 100ms;
+  -webkit-transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+  transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:hover {
   background-color: var(--background-color-framed--hover);
@@ -930,7 +930,7 @@
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:focus {
   border-color: var(--border-color-base--focus);
-  box-shadow: inset 0 0 0 1px var(--color-primary);
+  box-shadow: var(--box-shadow-base--focus);
   outline: 0;
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:not( .oo-ui-tagItemWidget-fixed ) {
@@ -958,11 +958,11 @@
   min-width: 20px;
   min-height: 20px;
   border: 0;
-  border-radius: 1.57142857em;
-  padding-top: 1.42857143em;
-  padding-right: 1.42857143em;
-  -webkit-transition: background-color 100ms;
-  transition: background-color 100ms;
+  border-radius: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-top: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-right: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  -webkit-transition: background-color var(--transition-base);
+  transition: background-color var(--transition-base);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button:hover {
   background-color: var(--background-color-framed--hover);
@@ -971,9 +971,9 @@
   background-color: var(--background-color-framed--active);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-icon-close {
-  right: 3px;
+  right: calc(4px - var(--border-width-base));
   min-width: 14px;
-  width: 1em;
+  width: calc(14 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-labelElement-label,
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-indicatorElement-indicator {
@@ -983,7 +983,7 @@
   background-color: var(--background-color-base--disabled);
   color: var(--color-base--disabled);
   border-color: var(--border-color-base--disabled);
-  text-shadow: 0 1px 1px var(--color-base--inverted);
+  text-shadow: var(--text-shadow-base--disabled);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-disabled:focus {
   outline: 0;
@@ -1011,16 +1011,16 @@
   -webkit-overflow-scrolling: touch;
 }
 .oo-ui-searchWidget-query {
-  height: 4em;
+  height: calc(56 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   padding: 0 16px;
-  border-bottom: 1px solid var(--border-color-toolbar);
+  border-bottom: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-searchWidget-query .oo-ui-textInputWidget {
   margin: 12px 0;
 }
 .oo-ui-searchWidget-results {
-  top: 4em;
+  top: calc(56 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   padding: 12px 16px 16px;
   line-height: 0;
 }
