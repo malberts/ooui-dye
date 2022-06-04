@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T16:25:34Z
+ * Date: 2022-06-04T21:13:00Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -271,7 +271,7 @@
   margin-left: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: calc(10 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(10 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-left: 2.42857143em;
@@ -353,7 +353,7 @@
   padding-left: 3.14285714em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-left: 2.42857143em;
