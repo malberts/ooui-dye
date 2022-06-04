@@ -24,7 +24,6 @@ sed -Ei 's|^@([^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/variables.less
 # Undo some variables used in calculations.
 sed -Ei 's|^@(min-size-base):(\s*).*;|@\1:\2/* no var */ 32px;|g' $base/variables.less
 sed -Ei 's|^@(min-size-icon):(\s*).*;|@\1:\2/* no var */ 20px;|g' $base/variables.less
-sed -Ei 's|^@(padding-horizontal-base):(\s*).*;|@\1:\2/* no var */ 12px;|g' $base/variables.less
 
 
 ##
@@ -54,6 +53,9 @@ sed -Ei 's|(@min-size-indicator \+ 2 \* @padding-horizontal-input-text)|calc( \1
 sed -Ei 's|(@margin-tagitem - @border-width-base)|calc( \1 )|g' $base/widgets.less
 sed -Ei "s|\( (@padding-vertical-base - 2 \* @border-width-base) \)|calc( \1 )|g" $base/widgets.less
 sed -Ei 's|(box-sizing: border-box)|//\1|g' $base/widgets.less
+sed -Ei 's|(2 \* @padding-horizontal-base);|calc( \1 );|g' $base/widgets.less
+sed -Ei 's|(@padding-horizontal-base - @size-indicator-inner-distance)|calc( \1 )|g' $base/widgets.less
+sed -Ei 's|unit\( @padding-horizontal-base \)|12|g' $base/widgets.less
 
 
 ##
