@@ -20,8 +20,6 @@
 .oo-ui-buttonElement > .oo-ui-buttonElement-button {
   cursor: pointer;
   display: inline-block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   vertical-align: middle;
   font-family: inherit;
   font-size: inherit;
@@ -112,7 +110,7 @@
   right: calc(5 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement:first-child {
-  margin-right: calc(-1 * 6px);
+  margin-right: calc(-1 * calc(6 / 14 * var(--font-size-base)));
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement:first-child {
   margin-right: calc(-1 * 6 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -121,7 +119,7 @@
   border-color: transparent;
   border-style: var(--border-style-base);
   border-width: var(--border-width-base);
-  padding: var(--padding-vertical-base) 6px;
+  padding: var(--padding-vertical-base) calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-buttonElement-frameless.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-right: calc(30 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -133,7 +131,7 @@
   padding-right: calc(calc(30 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) + calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) * 2));
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding-right: 6px;
+  padding-right: calc(6 / 14 * var(--font-size-base));
   padding-top: var(--padding-vertical-base);
 }
 .oo-ui-buttonElement-frameless.oo-ui-indicatorElement.oo-ui-iconElement.oo-ui-labelElement > .oo-ui-buttonElement-button {
@@ -373,9 +371,7 @@
 }
 
 .oo-ui-clippableElement-clippable {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  min-height: 40px;
+  min-height: calc(40 / 14 * var(--font-size-base));
   -webkit-overflow-scrolling: touch;
 }
 
@@ -387,8 +383,6 @@
 
 .oo-ui-labelElement .oo-ui-labelElement-label,
 .oo-ui-labelElement.oo-ui-labelElement-label {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-labelElement-invisible {
   display: block;
@@ -468,7 +462,7 @@
 
 .oo-ui-fieldLayout {
   display: block;
-  margin-top: 16px;
+  margin-top: calc(16 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout:before,
 .oo-ui-fieldLayout:after {
@@ -530,7 +524,7 @@
 }
 .oo-ui-fieldLayout.oo-ui-labelElement,
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline {
-  margin-top: 12px;
+  margin-top: calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout:first-child,
 .oo-ui-fieldLayout.oo-ui-labelElement:first-child,
@@ -538,7 +532,7 @@
   margin-top: 0;
 }
 .oo-ui-fieldLayout.oo-ui-labelElement > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header {
-  padding-bottom: 4px;
+  padding-bottom: calc(4 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-top > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-inline > .oo-ui-fieldLayout-body {
@@ -546,15 +540,13 @@
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: 40%;
   padding-left: calc(calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) + calc(5 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   display: block;
-  padding-top: 4px;
+  padding-top: calc(4 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-left > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-help,
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-right > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-help {
@@ -568,7 +560,7 @@
 .oo-ui-fieldLayout.oo-ui-labelElement.oo-ui-fieldLayout-align-inline > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header {
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: 6px;
+  padding-right: calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout .oo-ui-fieldLayout-help {
   margin-left: 0;
@@ -582,26 +574,24 @@
   background-color: transparent;
 }
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-top > .oo-ui-fieldLayout-body > .oo-ui-inline-help {
-  margin-top: 4px;
+  margin-top: calc(4 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-top .oo-ui-fieldLayout-help,
 .oo-ui-fieldLayout.oo-ui-fieldLayout-align-inline .oo-ui-fieldLayout-help {
-  margin-top: -6px;
-  margin-left: -8px;
+  margin-top: -calc(6 / 14 * var(--font-size-base));
+  margin-left: -calc(8 / 14 * var(--font-size-base));
   margin-right: 0;
 }
 .oo-ui-fieldLayout-messages {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   max-width: var(--max-width-base);
-  padding: 4px 0;
+  padding: calc(4 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-fieldLayout-messages > .oo-ui-messageWidget {
-  margin-right: 12px;
-  margin-left: 12px;
+  margin-right: calc(12 / 14 * var(--font-size-base));
+  margin-left: calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout-messages > .oo-ui-messageWidget:first-child {
-  margin-top: 4px;
+  margin-top: calc(4 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldLayout-disabled > .oo-ui-fieldLayout-body > .oo-ui-fieldLayout-header > .oo-ui-labelElement-label {
   color: var(--color-base--disabled);
@@ -620,7 +610,7 @@
   max-width: var(--max-width-base);
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget {
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget.oo-ui-textInputWidget > .oo-ui-inputWidget-input,
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-widget .oo-ui-dropdownWidget-handle,
@@ -633,7 +623,7 @@
   margin-right: calc(-1 * var(--border-width-base));
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-button .oo-ui-buttonElement-frameless {
-  margin-right: 6px;
+  margin-right: calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-textInputWidget > .oo-ui-inputWidget-input:hover,
 .oo-ui-actionFieldLayout .oo-ui-actionFieldLayout-input > .oo-ui-textInputWidget > .oo-ui-inputWidget-input:focus,
@@ -665,7 +655,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-fieldsetLayout.oo-ui-labelElement > .oo-ui-fieldsetLayout-header {
   color: inherit;
   display: inline-table;
-  box-sizing: border-box;
   padding: 0;
   white-space: normal;
   float: right;
@@ -694,11 +683,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-fieldsetLayout + .oo-ui-fieldsetLayout,
 .oo-ui-fieldsetLayout + .oo-ui-formLayout {
-  margin-top: 24px;
+  margin-top: calc(24 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldsetLayout.oo-ui-labelElement > .oo-ui-fieldsetLayout-header > .oo-ui-labelElement-label {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: calc(8 / 14 * var(--font-size-base));
   font-size: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   font-weight: bold;
 }
@@ -706,11 +695,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-right: calc(26 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
 }
 .oo-ui-fieldsetLayout > .oo-ui-inline-help {
-  margin-bottom: 8px;
+  margin-bottom: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help,
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help:last-child {
-  margin-left: -8px;
+  margin-left: -calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-fieldsetLayout .oo-ui-fieldsetLayout-help .oo-ui-buttonElement-button {
   padding-top: calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -723,7 +712,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-formLayout + .oo-ui-fieldsetLayout,
 .oo-ui-formLayout + .oo-ui-formLayout {
-  margin-top: 24px;
+  margin-top: calc(24 / 14 * var(--font-size-base));
 }
 
 .oo-ui-panelLayout {
@@ -741,18 +730,18 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   bottom: 0;
 }
 .oo-ui-panelLayout-padded {
-  padding: 12px 16px 16px;
+  padding: calc(12 / 14 * var(--font-size-base)) calc(16 / 14 * var(--font-size-base)) calc(16 / 14 * var(--font-size-base));
 }
 .oo-ui-panelLayout-padded.oo-ui-formLayout > .oo-ui-fieldsetLayout .oo-ui-labelElement-label,
 .oo-ui-panelLayout-padded.oo-ui-formLayout > .oo-ui-fieldsetLayout .oo-ui-iconElement-icon {
-  margin-top: calc(-1 * 12px / 2);
+  margin-top: calc(-1 * calc(12 / 14 * var(--font-size-base)) / 2);
 }
 .oo-ui-panelLayout-framed {
   border: var(--border-dialog);
   border-radius: var(--border-radius-base);
 }
 .oo-ui-panelLayout-padded.oo-ui-panelLayout-framed {
-  margin: 12px 0;
+  margin: calc(12 / 14 * var(--font-size-base)) 0;
 }
 
 .oo-ui-horizontalLayout > .oo-ui-widget {
@@ -764,7 +753,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-horizontalLayout > .oo-ui-layout,
 .oo-ui-horizontalLayout > .oo-ui-widget {
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-horizontalLayout > .oo-ui-layout:last-child,
 .oo-ui-horizontalLayout > .oo-ui-widget:last-child {
@@ -774,7 +763,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-top: 0;
 }
 .oo-ui-horizontalLayout > .oo-ui-widget {
-  margin-bottom: 8px;
+  margin-bottom: calc(8 / 14 * var(--font-size-base));
 }
 
 
@@ -845,7 +834,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-radioOptionWidget {
   display: table;
-  padding: 4px 0;
+  padding: calc(4 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-radioOptionWidget .oo-ui-radioInputWidget,
 .oo-ui-radioOptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
@@ -862,7 +851,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-top: 0;
 }
 .oo-ui-radioOptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
-  padding-right: 6px;
+  padding-right: calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-radioOptionWidget .oo-ui-radioInputWidget {
   margin-left: 0;
@@ -879,8 +868,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-messageWidget {
   position: relative;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   font-weight: bold;
 }
 .oo-ui-messageWidget > .oo-ui-labelElement-label {
@@ -894,19 +881,19 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block {
   border: var(--border-width-base) var(--border-style-base);
-  padding: 16px 24px;
+  padding: calc(16 / 14 * var(--font-size-base)) calc(24 / 14 * var(--font-size-base));
   font-weight: normal;
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block > .oo-ui-iconElement-icon {
-  background-position: 0 16px;
+  background-position: 0 calc(16 / 14 * var(--font-size-base));
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-messageWidget-showClose {
-  padding-left: calc(var(--min-size-base) + 24px);
+  padding-left: calc(var(--min-size-base) + calc(24 / 14 * var(--font-size-base)));
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block > .oo-ui-messageWidget-close {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: calc(8 / 14 * var(--font-size-base));
+  left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-messageWidget.oo-ui-messageWidget-block.oo-ui-flaggedElement-error {
   background-color: var(--background-color-error--framed);
@@ -931,7 +918,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   color: var(--color-success);
 }
 .oo-ui-messageWidget + .oo-ui-messageWidget {
-  margin-top: 8px;
+  margin-top: calc(8 / 14 * var(--font-size-base));
 }
 
 .oo-ui-iconWidget {
@@ -943,7 +930,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   user-select: none;
   clip: auto;
   margin: 0;
-  text-indent: -9999px;
+  text-indent: -calc(9999 / 14 * var(--font-size-base));
   line-height: 2.5;
   display: inline-block;
   position: static;
@@ -963,7 +950,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   user-select: none;
   clip: auto;
   margin: 0;
-  text-indent: -9999px;
+  text-indent: -calc(9999 / 14 * var(--font-size-base));
   line-height: 2.5;
   display: inline-block;
   position: static;
@@ -975,7 +962,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 .oo-ui-buttonWidget {
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-buttonWidget:last-child {
   margin-left: 0;
@@ -984,7 +971,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-buttonGroupWidget {
   display: inline-block;
   border-radius: var(--border-radius-base);
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
   z-index: 0;
   position: relative;
   padding-bottom: var(--border-width-base);
@@ -1122,94 +1109,94 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   }
 }
 .oo-ui-popupWidget-anchored-top {
-  margin-top: 9px;
+  margin-top: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor {
-  top: calc(-1 * 9px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:before {
-  bottom: calc(-1 * 9px - 1px);
-  right: calc(-1 * 9px);
+  bottom: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)));
   border-bottom-color: var(--border-color-base--active);
-  border-width: calc(9px + 1px);
+  border-width: calc(calc(9 / 14 * var(--font-size-base)) + 1px);
 }
 .oo-ui-popupWidget-anchored-top .oo-ui-popupWidget-anchor:after {
-  bottom: calc(-1 * 9px - 1px);
-  right: calc(-1 * 9px + 1px);
+  bottom: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)) + 1px);
   border-bottom-color: var(--background-color-base);
-  border-width: 9px;
+  border-width: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-bottom {
-  margin-bottom: 9px;
+  margin-bottom: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor {
-  bottom: calc(-1 * 9px);
+  bottom: calc(-1 * calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:before {
-  top: calc(-1 * 9px - 1px);
-  right: calc(-1 * 9px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)));
   border-top-color: var(--border-color-base);
-  border-width: calc(9px + 1px);
+  border-width: calc(calc(9 / 14 * var(--font-size-base)) + 1px);
 }
 .oo-ui-popupWidget-anchored-bottom .oo-ui-popupWidget-anchor:after {
-  top: calc(-1 * 9px - 1px);
-  right: calc(-1 * 9px + 1px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)) + 1px);
   border-top-color: var(--background-color-base);
-  border-width: 9px;
+  border-width: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-start {
-  margin-right: 9px;
+  margin-right: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor {
-  right: calc(-1 * 9px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor:before {
-  left: calc(-1 * 9px - 1px);
-  top: calc(-1 * 9px);
+  left: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)));
   border-left-color: var(--border-color-base);
-  border-width: calc(9px + 1px);
+  border-width: calc(calc(9 / 14 * var(--font-size-base)) + 1px);
 }
 .oo-ui-popupWidget-anchored-start .oo-ui-popupWidget-anchor:after {
-  left: calc(-1 * 9px - 1px);
-  top: calc(-1 * 9px + 1px);
+  left: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)) + 1px);
   border-left-color: var(--background-color-base);
-  border-width: 9px;
+  border-width: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-end {
-  margin-left: 9px;
+  margin-left: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor {
-  left: calc(-1 * 9px);
+  left: calc(-1 * calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor:before {
-  right: calc(-1 * 9px - 1px);
-  top: calc(-1 * 9px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)));
   border-right-color: var(--border-color-base);
-  border-width: calc(9px + 1px);
+  border-width: calc(calc(9 / 14 * var(--font-size-base)) + 1px);
 }
 .oo-ui-popupWidget-anchored-end .oo-ui-popupWidget-anchor:after {
-  right: calc(-1 * 9px - 1px);
-  top: calc(-1 * 9px + 1px);
+  right: calc(-1 * calc(9 / 14 * var(--font-size-base)) - 1px);
+  top: calc(-1 * calc(9 / 14 * var(--font-size-base)) + 1px);
   border-right-color: var(--background-color-base);
-  border-width: 9px;
+  border-width: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-transitioning .oo-ui-popupWidget-popup {
   -webkit-transition: width var(--transition-base), height var(--transition-base), right var(--transition-base);
   transition: width var(--transition-base), height var(--transition-base), right var(--transition-base);
 }
 .oo-ui-popupWidget-head {
-  margin-bottom: 9px;
+  margin-bottom: calc(9 / 14 * var(--font-size-base));
 }
 .oo-ui-popupWidget-head > .oo-ui-iconElement-icon {
   right: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  height: calc(calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em)  + 2 *  9px);
+  height: calc(calc(var(--min-size-icon) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em)  + 2 *  calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-head > .oo-ui-iconElement-noIcon + .oo-ui-labelElement-label {
   margin-right: var(--padding-horizontal-base);
 }
 .oo-ui-popupWidget-head > .oo-ui-labelElement-label {
   display: inline-block;
-  margin: 9px var(--padding-horizontal-base) 0 calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  margin: calc(9 / 14 * var(--font-size-base)) var(--padding-horizontal-base) 0 calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-popupWidget-head > .oo-ui-buttonWidget {
@@ -1226,7 +1213,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin: var(--padding-vertical-base) var(--padding-horizontal-base);
 }
 .oo-ui-popupWidget-footer {
-  margin: 9px var(--padding-horizontal-base);
+  margin: calc(9 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 
 .oo-ui-popupButtonWidget {
@@ -1237,7 +1224,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 .oo-ui-inputWidget {
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-inputWidget:last-child {
   margin-left: 0;
@@ -1274,8 +1261,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-checkboxInputWidget [type='checkbox'] + span {
   background-color: var(--background-color-base);
   background-size: 0 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   position: absolute;
   right: 0;
   width: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -1348,7 +1333,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-checkboxMultiselectInputWidget .oo-ui-fieldLayout {
   margin-top: 0;
-  padding: 4px 0;
+  padding: calc(4 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-checkboxMultiselectInputWidget .oo-ui-fieldLayout:first-child {
   padding-top: 0;
@@ -1357,8 +1342,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-dropdownInputWidget {
   position: relative;
   vertical-align: middle;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: var(--size-full);
   max-width: var(--max-width-input);
 }
@@ -1375,8 +1358,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-position: -9999em 0;
   background-repeat: no-repeat;
   width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-dropdownInputWidget.oo-ui-widget-enabled select {
   cursor: pointer;
@@ -1386,8 +1367,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-appearance: none;
   background-color: transparent;
   background-position: left var(--padding-horizontal-base) center;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   height: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   border: var(--border-base);
   border-radius: var(--border-radius-base);
@@ -1476,8 +1455,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: var(--background-color-base);
   position: absolute;
   right: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   border-color: var(--border-color-base--active);
@@ -1499,7 +1476,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-radioInputWidget [type='radio']:checked + span,
 .oo-ui-radioInputWidget [type='radio']:checked:hover + span,
 .oo-ui-radioInputWidget [type='radio']:checked:focus:hover + span {
-  border-width: 6px;
+  border-width: calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-radioInputWidget [type='radio']:disabled + span {
   background-color: var(--background-color-filled--disabled);
@@ -1542,7 +1519,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-radioSelectInputWidget .oo-ui-fieldLayout {
   margin-top: 0;
-  padding: 4px 0;
+  padding: calc(4 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-radioSelectInputWidget .oo-ui-fieldLayout:first-child {
   padding-top: 0;
@@ -1551,8 +1528,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-textInputWidget {
   position: relative;
   vertical-align: middle;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: var(--size-full);
   max-width: var(--max-width-input);
 }
@@ -1563,8 +1538,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-appearance: textfield;
   display: block;
   width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-textInputWidget input::-ms-clear {
   display: none;
@@ -1764,7 +1737,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-shadow: var(--box-shadow-menu);
 }
 .oo-ui-menuSelectWidget.oo-ui-clippableElement-clippable {
-  min-height: 32px;
+  min-height: calc(32 / 14 * var(--font-size-base));
 }
 .oo-ui-menuSelectWidget-invisible {
   display: none;
@@ -1796,7 +1769,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-menuSectionOptionWidget {
   color: var(--color-base--subtle);
-  padding: var(--padding-vertical-base) var(--padding-horizontal-base) 4px;
+  padding: var(--padding-vertical-base) var(--padding-horizontal-base) calc(4 / 14 * var(--font-size-base));
   font-weight: bold;
 }
 .oo-ui-menuSectionOptionWidget.oo-ui-widget-enabled {
@@ -1818,7 +1791,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   vertical-align: middle;
   width: var(--size-full);
   max-width: var(--max-width-input);
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-dropdownWidget-handle {
   position: relative;
@@ -1833,8 +1806,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-dropdownWidget-handle .oo-ui-labelElement-label {
   display: inline-block;
@@ -1974,7 +1945,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   width: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button {
-  min-width: 37px;
+  min-width: calc(37 / 14 * var(--font-size-base));
   padding-right: 0;
 }
 .oo-ui-comboBoxInputWidget-dropdownButton.oo-ui-indicatorElement .oo-ui-buttonElement-button > .oo-ui-indicatorElement-indicator {
@@ -2023,7 +1994,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-checkboxMultioptionWidget {
   display: table;
-  padding: 4px 0;
+  padding: calc(4 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-checkboxMultioptionWidget .oo-ui-checkboxInputWidget,
 .oo-ui-checkboxMultioptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
@@ -2040,15 +2011,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-top: 0;
 }
 .oo-ui-checkboxMultioptionWidget.oo-ui-labelElement > .oo-ui-labelElement-label {
-  padding-right: 6px;
+  padding-right: calc(6 / 14 * var(--font-size-base));
 }
 .oo-ui-checkboxMultioptionWidget .oo-ui-checkboxInputWidget {
   margin-left: 0;
 }
 
 .oo-ui-progressBarWidget {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   max-width: var(--max-width-base);
   border: var(--border-base);
   border-radius: calc(14 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -2122,7 +2091,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-numberInputWidget-buttoned .oo-ui-buttonWidget .oo-ui-buttonElement-button {
   display: block;
-  min-width: 37px;
+  min-width: calc(37 / 14 * var(--font-size-base));
   min-height: var(--min-size-base);
   padding-right: 0;
   padding-left: 0;
@@ -2165,7 +2134,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   opacity: 0;
   z-index: 1;
   cursor: pointer;
-  padding-top: 100px;
+  padding-top: calc(100 / 14 * var(--font-size-base));
 }
 .oo-ui-selectFileInputWidget-selectButton.oo-ui-widget-disabled > .oo-ui-buttonElement-button > [type='file'] {
   display: none;
@@ -2227,8 +2196,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout {
   width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-bookletLayout-outlinePanel-editable > .oo-ui-outlineSelectWidget {
   height: auto;
@@ -2248,7 +2215,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: 2.5em;
 }
 .oo-ui-bookletLayout-stackLayout > .oo-ui-panelLayout {
-  padding: 20px;
+  padding: calc(20 / 14 * var(--font-size-base));
 }
 .oo-ui-bookletLayout-outlinePanel > .oo-ui-outlineControlsWidget {
   border-top: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
@@ -2271,7 +2238,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   top: 3em;
 }
 .oo-ui-indexLayout-stackLayout > .oo-ui-panelLayout {
-  padding: 20px;
+  padding: calc(20 / 14 * var(--font-size-base));
 }
 .oo-ui-indexLayout.oo-ui-menuLayout.oo-ui-menuLayout-expanded > .oo-ui-menuLayout-menu {
   height: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -2387,7 +2354,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-buttonSelectWidget {
   display: inline-block;
   border-radius: var(--border-radius-base);
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
   z-index: 0;
   position: relative;
   padding-bottom: var(--border-width-base);
@@ -2440,7 +2407,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 
 .oo-ui-toggleButtonWidget {
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
 }
 .oo-ui-toggleButtonWidget:last-child {
   margin-left: 0;
@@ -2458,17 +2425,15 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   background-color: var(--background-color-framed);
   width: calc(1.5em + 2em);
-  min-height: 26px;
+  min-height: calc(26 / 14 * var(--font-size-base));
   height: 2em;
   border: var(--border-width-base) var(--border-style-base) var(--border-color-base--active);
   border-radius: 1em;
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
   -webkit-transition: background-color var(--transition-ease-medium), border-color var(--transition-ease-medium);
   transition: background-color var(--transition-ease-medium), border-color var(--transition-ease-medium);
 }
@@ -2478,8 +2443,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-toggleSwitchWidget-grip {
   position: absolute;
   display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-toggleSwitchWidget:last-child {
   margin-left: 0;
@@ -2500,9 +2463,9 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-toggleSwitchWidget-grip {
   top: calc(5 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  min-width: 16px;
+  min-width: calc(16 / 14 * var(--font-size-base));
   width: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  min-height: 16px;
+  min-height: calc(16 / 14 * var(--font-size-base));
   height: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   border-radius: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   -webkit-transition: background-color var(--transition-ease-medium), right var(--transition-base), margin-right var(--transition-base);
@@ -2719,7 +2682,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
   -webkit-transition: background-color var(--transition-base), color var(--transition-base);
   transition: background-color var(--transition-base), color var(--transition-base);
 }
@@ -2766,8 +2729,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-outlineControlsWidget-items,
 .oo-ui-outlineControlsWidget-movers {
   float: right;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-outlineControlsWidget-items {
   float: right;
@@ -2806,7 +2767,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: calc(6px * 3);
+  width: calc(calc(6 / 14 * var(--font-size-base)) * 3);
   height: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   pointer-events: none;
 }
@@ -2829,12 +2790,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-tabOptionWidget {
   display: inline-block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   vertical-align: bottom;
   color: var(--color-base--hover);
-  margin: 6px 6px 0 0;
-  padding: 0 8px;
+  margin: calc(6 / 14 * var(--font-size-base)) calc(6 / 14 * var(--font-size-base)) 0 0;
+  padding: 0 calc(8 / 14 * var(--font-size-base));
   border-color: transparent;
   border-style: var(--border-style-base);
   font-weight: bold;
@@ -2847,12 +2806,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tabOptionWidget > .oo-ui-labelElement-label {
   color: inherit;
-  padding: var(--padding-vertical-base) 5px;
+  padding: var(--padding-vertical-base) calc(5 / 14 * var(--font-size-base));
   line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   text-decoration: inherit;
 }
 .oo-ui-tabSelectWidget-mobile .oo-ui-tabOptionWidget:last-child {
-  margin-left: calc(6px * 3);
+  margin-left: calc(calc(6 / 14 * var(--font-size-base)) * 3);
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget {
   border-width: var(--border-width-base) var(--border-width-base) 0 var(--border-width-base);
@@ -2861,7 +2820,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
   border-bottom: calc(2 * var(--border-width-base)) var(--border-style-base) transparent;
-  padding: var(--padding-vertical-base) 5px calc(var(--padding-vertical-base) - 2 * var(--border-width-base));
+  padding: var(--padding-vertical-base) calc(5 / 14 * var(--font-size-base)) calc(var(--padding-vertical-base) - 2 * var(--border-width-base));
   -webkit-transition: border-color var(--transition-base);
   transition: border-color var(--transition-base);
 }
@@ -2887,7 +2846,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-bottom-color: var(--border-color-base--focus);
 }
 .oo-ui-tabSelectWidget-frameless .oo-ui-tabOptionWidget {
-  margin: 6px 6px calc(-1 * var(--border-width-base)) 0;
+  margin: calc(6 / 14 * var(--font-size-base)) calc(6 / 14 * var(--font-size-base)) calc(-1 * var(--border-width-base)) 0;
   border-width: var(--border-width-base) 0;
   box-shadow: inset 0 0 0 0 var(--color-primary);
   -webkit-transition: color var(--transition-base), box-shadow var(--transition-base);
@@ -2952,10 +2911,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   outline: 0;
 }
 .oo-ui-tagMultiselectWidget-handle {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   min-height: var(--min-size-base);
-  margin-left: 8px;
+  margin-left: calc(8 / 14 * var(--font-size-base));
   border: var(--border-base);
   border-radius: var(--border-radius-base);
   padding: 0 var(--padding-horizontal-input-text);
@@ -2967,18 +2924,16 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group {
   display: inline-block;
   max-width: 100%;
-  margin-top: 4px;
+  margin-top: calc(4 / 14 * var(--font-size-base));
   margin-right: calc(-1 * 2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-tagMultiselectWidget-handle .oo-ui-tagMultiselectWidget-group > input {
   background-color: transparent;
   color: var(--color-base--emphasized);
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   height: calc(calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - 2 * (calc(1 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em)));
   border: 0;
   padding: var(--padding-vertical-base) 0 var(--padding-vertical-base) calc(8 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  margin-top: calc(-1 * 4px);
+  margin-top: calc(-1 * calc(4 / 14 * var(--font-size-base)));
   font-family: inherit;
   font-size: inherit;
   line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -3082,15 +3037,13 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   display: inline-block;
   cursor: default;
   white-space: nowrap;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   width: auto;
   max-width: 100%;
   height: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  margin: 0 0 4px 4px;
+  margin: 0 0 calc(4 / 14 * var(--font-size-base)) calc(4 / 14 * var(--font-size-base));
   border: var(--border-base);
   border-radius: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding: 0 8px;
+  padding: 0 calc(8 / 14 * var(--font-size-base));
   line-height: calc(calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - 2 * calc(1 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
   vertical-align: middle;
 }
@@ -3124,7 +3077,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled:not( .oo-ui-tagItemWidget-fixed ) {
   background-color: var(--background-color-framed);
-  padding-left: 23px;
+  padding-left: calc(23 / 14 * var(--font-size-base));
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-invalid {
   border-color: var(--border-color-error);
@@ -3144,8 +3097,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button {
   display: block;
-  min-width: 20px;
-  min-height: 20px;
+  min-width: calc(20 / 14 * var(--font-size-base));
+  min-height: calc(20 / 14 * var(--font-size-base));
   border: 0;
   border-radius: calc(22 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   padding-top: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -3160,8 +3113,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background-color: var(--background-color-framed--active);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-icon-close {
-  right: calc(4px - var(--border-width-base));
-  min-width: 14px;
+  right: calc(calc(4 / 14 * var(--font-size-base)) - var(--border-width-base));
+  min-width: calc(14 / 14 * var(--font-size-base));
   width: calc(14 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-tagItemWidget.oo-ui-widget-enabled .oo-ui-buttonElement-button .oo-ui-labelElement-label,
@@ -3201,16 +3154,16 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-searchWidget-query {
   height: calc(56 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding: 0 16px;
+  padding: 0 calc(16 / 14 * var(--font-size-base));
   border-bottom: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .oo-ui-searchWidget-query .oo-ui-textInputWidget {
-  margin: 12px 0;
+  margin: calc(12 / 14 * var(--font-size-base)) 0;
 }
 .oo-ui-searchWidget-results {
   top: calc(56 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding: 12px 16px 16px;
+  padding: calc(12 / 14 * var(--font-size-base)) calc(16 / 14 * var(--font-size-base)) calc(16 / 14 * var(--font-size-base));
   line-height: 0;
 }
 
@@ -3225,16 +3178,12 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Date: 2022-05-28T01:43:53Z
  */
 .oo-ui-tool {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-tool > .oo-ui-tool-link > .oo-ui-tool-checkIcon {
   display: none;
 }
 .oo-ui-tool .oo-ui-tool-link {
   position: relative;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding-top: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
   padding-right: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
@@ -3242,10 +3191,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-right: calc(calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
 }
 .oo-ui-tool.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base) 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base) calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-tool.oo-ui-tool-with-icon.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base) 11px calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base) calc(11 / 14 * var(--font-size-base)) calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-tool .oo-ui-iconElement-icon {
   display: block;
@@ -3397,8 +3346,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 .oo-ui-toolGroup {
   display: inline-block;
   vertical-align: middle;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-toolGroup-empty {
   display: none;
@@ -3508,8 +3455,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   min-width: calc(26 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
 }
 .oo-ui-popupToolGroup-handle {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
   right: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -3535,7 +3480,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-right: calc(calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding: 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle .oo-ui-labelElement-label {
   line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -3582,7 +3527,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   box-shadow: var(--box-shadow-menu);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
   padding-right: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
@@ -3750,8 +3695,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-listToolGroup-tools .oo-ui-tool {
   display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
   background-color: var(--background-color-tool--hover);
@@ -3792,10 +3735,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-right: 0;
 }
 .oo-ui-menuToolGroup .oo-ui-popupToolGroup-handle {
-  min-width: 140px;
+  min-width: calc(140 / 14 * var(--font-size-base));
 }
 .oo-ui-toolbar-narrow .oo-ui-menuToolGroup .oo-ui-popupToolGroup-handle {
-  min-width: 100px;
+  min-width: calc(100 / 14 * var(--font-size-base));
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool-link .oo-ui-iconElement-icon {
   right: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
@@ -3912,8 +3855,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   background: transparent;
 }
 .oo-ui-window-frame {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-window-content {
   position: absolute;
@@ -3952,8 +3893,6 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   position: absolute;
   right: 0;
   left: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-dialog-content > .oo-ui-window-head {
   overflow: hidden;
@@ -4164,7 +4103,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   margin-right: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: 10px var(--padding-horizontal-base);
+  padding: calc(10 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-right: calc(34 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
