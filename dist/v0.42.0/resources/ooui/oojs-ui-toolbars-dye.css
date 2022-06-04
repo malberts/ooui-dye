@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T16:25:34Z
+ * Date: 2022-06-04T21:13:00Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
@@ -24,10 +24,10 @@
   padding-left: 2.85714286em;
 }
 .oo-ui-tool.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base)) calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base) calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-tool.oo-ui-tool-with-icon.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base)) calc(11 / 14 * var(--font-size-base)) 2.64285714em;
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base) calc(11 / 14 * var(--font-size-base)) 2.64285714em;
 }
 .oo-ui-tool .oo-ui-iconElement-icon {
   display: block;
@@ -323,7 +323,7 @@
   padding-left: 2.85714286em;
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle .oo-ui-labelElement-label {
   line-height: 1.42857143em;
@@ -355,7 +355,7 @@
 }
 .oo-ui-popupToolGroup-header {
   color: var(--color-base--subtle);
-  padding: 0 calc(12 / 14 * var(--font-size-base));
+  padding: 0 var(--padding-horizontal-base);
   font-weight: bold;
   line-height: 2.28571429em;
 }
@@ -370,7 +370,7 @@
   box-shadow: var(--box-shadow-menu);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
   padding-left: 0.71428571em;
