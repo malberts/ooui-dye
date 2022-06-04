@@ -46,6 +46,7 @@ jobs:
       - run: make create
       - run: make convert
       - run: make build
+      - run: make after
       
       - name: Get version
         run: |
