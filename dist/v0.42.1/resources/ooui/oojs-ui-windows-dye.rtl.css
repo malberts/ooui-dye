@@ -17,8 +17,6 @@
   background: transparent;
 }
 .oo-ui-window-frame {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-window-content {
   position: absolute;
@@ -59,8 +57,6 @@
   position: absolute;
   right: 0;
   left: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-dialog-content > .oo-ui-window-head {
   overflow: hidden;
@@ -275,7 +271,7 @@
   margin-right: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: 10px var(--padding-horizontal-base);
+  padding: calc(10 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-right: calc(34 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
