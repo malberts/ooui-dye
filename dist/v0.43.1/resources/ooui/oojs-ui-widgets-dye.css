@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T16:25:23Z
+ * Date: 2022-06-04T21:12:53Z
  */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ),
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ).oo-ui-widget {
@@ -524,7 +524,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  padding: calc(11 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
   -webkit-transition: background-color var(--transition-base), color var(--transition-base);
   transition: background-color var(--transition-base), color var(--transition-base);
 }
