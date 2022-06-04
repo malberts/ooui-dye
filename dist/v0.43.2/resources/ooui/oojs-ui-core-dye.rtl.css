@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T16:25:16Z
+ * Date: 2022-06-04T21:12:45Z
  */
 .oo-ui-element-hidden {
   display: none !important;
@@ -203,8 +203,8 @@
   border-style: var(--border-style-base);
   border-width: var(--border-width-base);
   border-radius: var(--border-radius-base);
-  padding-right: calc(12 / 14 * var(--font-size-base));
-  padding-left: calc(12 / 14 * var(--font-size-base));
+  padding-right: var(--padding-horizontal-base);
+  padding-left: var(--padding-horizontal-base);
 }
 .oo-ui-buttonElement-framed.oo-ui-iconElement > .oo-ui-buttonElement-button {
   padding-top: 2.14285714em;
@@ -790,7 +790,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 
 .oo-ui-decoratedOptionWidget {
-  padding: var(--padding-vertical-menu) calc(12 / 14 * var(--font-size-base));
+  padding: var(--padding-vertical-menu) var(--padding-horizontal-base);
   line-height: 1;
 }
 .oo-ui-decoratedOptionWidget.oo-ui-iconElement {
@@ -806,7 +806,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   padding-left: 2.14285714em;
 }
 .oo-ui-decoratedOptionWidget .oo-ui-indicatorElement-indicator {
-  left: calc(12 / 14 * var(--font-size-base));
+  left: var(--padding-horizontal-base);
 }
 .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-iconElement-icon,
 .oo-ui-decoratedOptionWidget.oo-ui-widget-enabled:hover .oo-ui-indicatorElement-indicator {
@@ -1191,11 +1191,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   height: calc(1.42857143em  + 2 *  calc(9 / 14 * var(--font-size-base)));
 }
 .oo-ui-popupWidget-head > .oo-ui-iconElement-noIcon + .oo-ui-labelElement-label {
-  margin-right: calc(12 / 14 * var(--font-size-base));
+  margin-right: var(--padding-horizontal-base);
 }
 .oo-ui-popupWidget-head > .oo-ui-labelElement-label {
   display: inline-block;
-  margin: calc(9 / 14 * var(--font-size-base)) 2.64285714em 0 calc(12 / 14 * var(--font-size-base));
+  margin: calc(9 / 14 * var(--font-size-base)) var(--padding-horizontal-base) 0 2.64285714em;
   line-height: 1.42857143em;
 }
 .oo-ui-popupWidget-head > .oo-ui-buttonWidget {
@@ -1209,10 +1209,10 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   line-height: 1.42857143em;
 }
 .oo-ui-popupWidget-body-padded {
-  margin: var(--padding-vertical-base) calc(12 / 14 * var(--font-size-base));
+  margin: var(--padding-vertical-base) var(--padding-horizontal-base);
 }
 .oo-ui-popupWidget-footer {
-  margin: calc(9 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
+  margin: calc(9 / 14 * var(--font-size-base)) var(--padding-horizontal-base);
 }
 
 .oo-ui-popupButtonWidget {
@@ -1365,11 +1365,11 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: transparent;
-  background-position: left calc(12 / 14 * var(--font-size-base)) center;
+  background-position: left var(--padding-horizontal-base) center;
   height: 2.28571429em;
   border: var(--border-base);
   border-radius: var(--border-radius-base);
-  padding-right: calc(12 / 14 * var(--font-size-base));
+  padding-right: var(--padding-horizontal-base);
   padding-left: 2.14285714em;
   font-size: inherit;
   font-family: inherit;
@@ -1381,8 +1381,8 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .oo-ui-dropdownInputWidget select {
-    background-position: left calc(12 / 14 * var(--font-size-base)) center;
-    padding-right: calc(12 / 14 * var(--font-size-base));
+    background-position: left var(--padding-horizontal-base) center;
+    padding-right: var(--padding-horizontal-base);
     padding-left: 2.14285714em;
   }
 }
@@ -1622,7 +1622,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 }
 .oo-ui-textInputWidget > .oo-ui-labelElement-label {
   color: var(--color-base--subtle);
-  padding: 0 calc(12 / 14 * var(--font-size-base)) 0 var(--padding-horizontal-input-text);
+  padding: 0 var(--padding-horizontal-base) 0 var(--padding-horizontal-input-text);
   line-height: 2.28571429em;
 }
 .oo-ui-textInputWidget.oo-ui-indicatorElement .oo-ui-inputWidget-input {
@@ -1767,14 +1767,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
 
 .oo-ui-menuSectionOptionWidget {
   color: var(--color-base--subtle);
-  padding: var(--padding-vertical-base) calc(12 / 14 * var(--font-size-base)) calc(4 / 14 * var(--font-size-base));
+  padding: var(--padding-vertical-base) var(--padding-horizontal-base) calc(4 / 14 * var(--font-size-base));
   font-weight: bold;
 }
 .oo-ui-menuSectionOptionWidget.oo-ui-widget-enabled {
   cursor: default;
 }
 .oo-ui-menuSectionOptionWidget ~ .oo-ui-menuOptionWidget {
-  padding-right: calc(24 / 14 * var(--font-size-base));
+  padding-right: calc(2 * var(--padding-horizontal-base));
 }
 .oo-ui-menuSectionOptionWidget ~ .oo-ui-menuOptionWidget.oo-ui-iconElement {
   padding-right: 3.5em;
@@ -1818,14 +1818,14 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   min-height: calc(32 / 14 * var(--font-size-base));
   border: var(--border-base);
   border-radius: var(--border-radius-base);
-  padding: var(--padding-vertical-base) 2.14285714em var(--padding-vertical-base) calc(12 / 14 * var(--font-size-base));
+  padding: var(--padding-vertical-base) 2.14285714em var(--padding-vertical-base) var(--padding-horizontal-base);
   line-height: 1;
 }
 .oo-ui-dropdownWidget-handle .oo-ui-iconElement-icon {
-  right: calc(12 / 14 * var(--font-size-base));
+  right: var(--padding-horizontal-base);
 }
 .oo-ui-dropdownWidget-handle .oo-ui-indicatorElement-indicator {
-  left: calc(11 / 14 * var(--font-size-base));
+  left: calc(var(--padding-horizontal-base) - 1px);
 }
 .oo-ui-dropdownWidget-handle .oo-ui-labelElement-label {
   line-height: 1.42857143em;
@@ -1955,7 +1955,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
   border-bottom-right-radius: 0;
 }
 .oo-ui-comboBoxInputWidget-php .oo-ui-indicatorWidget {
-  left: calc(12 / 14 * var(--font-size-base));
+  left: var(--padding-horizontal-base);
   margin: 0;
 }
 .oo-ui-comboBoxInputWidget-open .oo-ui-comboBoxInputWidget-dropdownButton > .oo-ui-buttonElement-button {
