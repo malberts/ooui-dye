@@ -6,42 +6,38 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-05-28T01:44:14Z
+ * Date: 2022-06-04T16:25:43Z
  */
 /* stylelint-disable selector-no-vendor-prefix */
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-tool {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-tool > .oo-ui-tool-link > .oo-ui-tool-checkIcon {
   display: none;
 }
 .oo-ui-tool .oo-ui-tool-link {
   position: relative;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding-top: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding-left: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-top: 3em;
+  padding-left: 3em;
 }
 .oo-ui-toolbar-narrow .oo-ui-tool .oo-ui-tool-link {
-  padding-left: calc(calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 2.85714286em;
 }
 .oo-ui-tool.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base) 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base)) calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-tool.oo-ui-tool-with-icon.oo-ui-tool-with-label .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base) 11px calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base)) calc(11 / 14 * var(--font-size-base)) 2.64285714em;
 }
 .oo-ui-tool .oo-ui-iconElement-icon {
   display: block;
-  left: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  left: 0.78571429em;
 }
 .oo-ui-toolbar-narrow .oo-ui-tool .oo-ui-iconElement-icon {
-  left: calc(calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - (calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) / 2));
+  left: 0.71428571em;
 }
 .oo-ui-tool .oo-ui-tool-title {
-  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 1.42857143em;
 }
 .oo-ui-tool.oo-ui-widget-enabled .oo-ui-tool-link {
   -webkit-transition: background-color var(--transition-base);
@@ -189,8 +185,6 @@
 .oo-ui-toolGroup {
   display: inline-block;
   vertical-align: middle;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-toolGroup-empty {
   display: none;
@@ -230,7 +224,7 @@
   display: inline-block;
 }
 .oo-ui-barToolGroup-tools > .oo-ui-tool + .oo-ui-tool {
-  margin-left: calc(-1 * var(--border-width-base) * 2);
+  margin-left: calc(var(--border-width-base) * -2);
 }
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-enabled-tools .oo-ui-tool.oo-ui-widget-disabled .oo-ui-iconElement-icon,
 .oo-ui-barToolGroup-tools.oo-ui-toolGroup-disabled-tools .oo-ui-tool .oo-ui-iconElement-icon {
@@ -262,7 +256,7 @@
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-popupToolGroup {
   position: relative;
-  min-width: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-width: 3em;
 }
 .oo-ui-popupToolGroup-handle {
   display: block;
@@ -298,77 +292,75 @@
   text-align: right;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup {
-  min-width: calc(calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  min-width: 2.85714286em;
 }
 .oo-ui-popupToolGroup.oo-ui-indicatorElement:not( .oo-ui-labelElement ):not( .oo-ui-iconElement ) {
-  min-width: calc(26 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-width: 1.85714286em;
 }
 .oo-ui-popupToolGroup-handle {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
-  left: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  left: 0.78571429em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-handle .oo-ui-iconElement-icon {
-  left: calc(calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  left: 0.64285714em;
 }
 .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator {
   background-position: center 52%;
-  right: calc(8 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  right: 0.57142857em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-handle .oo-ui-indicatorElement-indicator {
-  right: calc(4 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  right: 0.28571429em;
 }
 .oo-ui-popupToolGroup.oo-ui-iconElement .oo-ui-popupToolGroup-handle,
 .oo-ui-popupToolGroup.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-top: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-top: 3em;
 }
 .oo-ui-popupToolGroup.oo-ui-iconElement.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-left: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 3em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup.oo-ui-iconElement.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-left: calc(calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 2.85714286em;
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding: 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle .oo-ui-labelElement-label {
-  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 1.42857143em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding-left: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
-  padding-right: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 0.71428571em;
+  padding-right: 0.71428571em;
 }
 .oo-ui-popupToolGroup.oo-ui-iconElement.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding-left: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 2.64285714em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup.oo-ui-iconElement.oo-ui-labelElement .oo-ui-popupToolGroup-handle {
-  padding-left: calc(calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 2.5em;
 }
 .oo-ui-popupToolGroup.oo-ui-labelElement.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-right: calc(26 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-right: 1.85714286em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup.oo-ui-labelElement.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-right: calc(calc(26 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - 2 * calc(4 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-right: 1.28571429em;
 }
 .oo-ui-popupToolGroup.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-right: calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-right: 1.14285714em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup.oo-ui-indicatorElement .oo-ui-popupToolGroup-handle {
-  padding-right: calc(calc(16 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(4 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-right: 0.85714286em;
 }
 .oo-ui-popupToolGroup:not( .oo-ui-labelElement ):not( .oo-ui-iconElement ) .oo-ui-indicatorElement-indicator {
   opacity: var(--opacity-base);
 }
 .oo-ui-popupToolGroup-header {
   color: var(--color-base--subtle);
-  padding: 0 var(--padding-horizontal-base);
+  padding: 0 calc(12 / 14 * var(--font-size-base));
   font-weight: bold;
-  line-height: calc(var(--min-size-base) / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 2.28571429em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-header {
-  padding: 0 calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding: 0 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools {
   background-color: var(--background-color-toolbar);
@@ -378,27 +370,27 @@
   box-shadow: var(--box-shadow-menu);
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
-  padding: 11px var(--padding-horizontal-base);
+  padding: calc(11 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
-  padding-left: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
-  padding-right: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 0.71428571em;
+  padding-right: 0.71428571em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel {
   color: var(--color-base--subtle);
-  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 1.42857143em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel:not( :empty ) {
-  padding-left: calc(calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) * 1.5);
+  padding-left: 1.28571429em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-tools .oo-ui-tool-link .oo-ui-tool-accel:not( :empty ) {
-  padding-left: calc((calc(12 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) * 1.5) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 1.14285714em;
 }
 .oo-ui-popupToolGroup-tools .oo-ui-iconElement .oo-ui-tool-link {
-  padding-left: calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 2.64285714em;
 }
 .oo-ui-toolbar-narrow .oo-ui-popupToolGroup-tools .oo-ui-iconElement .oo-ui-tool-link {
-  padding-left: calc(calc(37 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em));
+  padding-left: 2.5em;
 }
 .oo-ui-popupToolGroup.oo-ui-widget-enabled > .oo-ui-popupToolGroup-handle {
   -webkit-transition: background-color var(--transition-base), box-shadow var(--transition-base);
@@ -548,8 +540,6 @@
 /* stylelint-enable selector-no-vendor-prefix */
 .oo-ui-listToolGroup-tools .oo-ui-tool {
   display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-listToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
   background-color: var(--background-color-tool--hover);
@@ -592,16 +582,16 @@
   border-left: 0;
 }
 .oo-ui-menuToolGroup .oo-ui-popupToolGroup-handle {
-  min-width: 140px;
+  min-width: calc(140 / 14 * var(--font-size-base));
 }
 .oo-ui-toolbar-narrow .oo-ui-menuToolGroup .oo-ui-popupToolGroup-handle {
-  min-width: 100px;
+  min-width: calc(100 / 14 * var(--font-size-base));
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool-link .oo-ui-iconElement-icon {
-  left: calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  left: 0.78571429em;
 }
 .oo-ui-toolbar-narrow .oo-ui-menuToolGroup-tools .oo-ui-tool-link .oo-ui-iconElement-icon {
-  left: calc(calc(11 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) - (calc(2 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) / 2));
+  left: 0.71428571em;
 }
 .oo-ui-menuToolGroup-tools .oo-ui-tool.oo-ui-widget-enabled:hover {
   background-color: var(--background-color-tool--active-hover);
@@ -687,7 +677,7 @@
   content: '';
   display: block;
   position: absolute;
-  top: calc(42 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  top: 3em;
   left: 0;
   width: 100%;
   height: 0;
