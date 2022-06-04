@@ -38,7 +38,6 @@ sed -Ei "s|'.*wikimedia-ui-base.less'|'variables.less'|g" $base/common.less
 ##
 # Layouts
 ##
-sed -i 's|@size-base + @start-frameless-icon|calc( @size-base + @start-frameless-icon )|g' $base/layouts.less
 sed -Ei 's|-(@border-width-base)|calc( -1 * \1 )|g' $base/layouts.less
 sed -Ei 's|(@border-width-base \* 2)|calc( \1 )|g' $base/layouts.less
 sed -Ei 's|(box-sizing: border-box)|//\1|g' $base/layouts.less
