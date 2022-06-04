@@ -6,15 +6,13 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-05-28T01:43:53Z
+ * Date: 2022-06-04T16:25:16Z
  */
 
 .oo-ui-window {
   background: transparent;
 }
 .oo-ui-window-frame {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-window-content {
   position: absolute;
@@ -53,8 +51,6 @@
   position: absolute;
   left: 0;
   right: 0;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .oo-ui-dialog-content > .oo-ui-window-head {
   overflow: hidden;
@@ -110,7 +106,7 @@
 .oo-ui-messageDialog-title,
 .oo-ui-messageDialog-message {
   display: block;
-  line-height: calc(20 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 1.42857143em;
   text-align: center;
 }
 .oo-ui-messageDialog-title {
@@ -123,7 +119,7 @@
   text-align: left;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget {
-  min-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 2.85714286em;
   margin-right: 0;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget:last-child {
@@ -139,7 +135,7 @@
   padding-bottom: 0;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget.oo-ui-labelElement .oo-ui-labelElement-label {
-  line-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  line-height: 2.85714286em;
   text-align: center;
 }
 .oo-ui-messageDialog-actions .oo-ui-actionWidget.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive .oo-ui-buttonElement-button:active {
@@ -218,24 +214,24 @@
   outline: var(--border-width-base) var(--border-style-base) var(--wmui-color-base70);
 }
 .oo-ui-processDialog-content .oo-ui-window-head {
-  min-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 2.85714286em;
 }
 .oo-ui-processDialog-content .oo-ui-window-body {
-  top: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  top: 2.85714286em;
 }
 .oo-ui-processDialog-navigation {
   position: relative;
-  min-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 2.85714286em;
 }
 .oo-ui-processDialog-location {
-  min-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 2.85714286em;
   text-align: center;
   cursor: default;
 }
 .oo-ui-processDialog-title {
   font-size: 1.1em;
   font-weight: bold;
-  line-height: calc(calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) / 1.1em);
+  line-height: 2.5974026em;
 }
 .oo-ui-processDialog .oo-ui-actionWidget > .oo-ui-buttonElement-button {
   border-radius: 0;
@@ -256,19 +252,19 @@
   border-color: var(--border-color-base--focus);
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  min-height: calc(40 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 2.85714286em;
   padding-top: 0;
-  padding-left: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 3.14285714em;
   padding-right: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement:first-child {
   margin-left: 0;
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  padding: 10px var(--padding-horizontal-base);
+  padding: calc(10 / 14 * var(--font-size-base)) calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-processDialog .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-left: calc(34 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 2.42857143em;
 }
 .oo-ui-processDialog-actions-primary .oo-ui-actionWidget > .oo-ui-buttonElement-button {
   border-left-color: var(--wmui-color-base70);
@@ -330,29 +326,29 @@
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-content .oo-ui-window-head,
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-navigation,
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-location {
-  min-height: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 3.14285714em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-location {
   margin-left: 1em;
   text-align: left;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-title {
-  line-height: calc(calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em) / 1.1em);
+  line-height: 2.85714286em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-processDialog-content .oo-ui-window-body {
-  top: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  top: 3.14285714em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  min-height: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding-left: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  min-height: 3.14285714em;
+  padding-left: 3.14285714em;
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement > .oo-ui-buttonElement-button {
-  min-height: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  line-height: calc(44 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
-  padding: 0 var(--padding-horizontal-base);
+  min-height: 3.14285714em;
+  line-height: 3.14285714em;
+  padding: 0 calc(12 / 14 * var(--font-size-base));
 }
 .oo-ui-processDialog.oo-ui-isMobile .oo-ui-actionWidget.oo-ui-labelElement.oo-ui-iconElement > .oo-ui-buttonElement-button {
-  padding-left: calc(34 / var(--ooui-font-size-browser) / var(--ooui-font-size-base) * 1em);
+  padding-left: 2.42857143em;
 }
 
 .oo-ui-windowManager-modal > .oo-ui-dialog {
