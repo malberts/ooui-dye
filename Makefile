@@ -13,7 +13,7 @@ build:
 	cd oojs-ui && npx grunt build
 
 after:
-	bash after.sh
+	bash after.sh $(TAG)
 
 copy:
 	rm -rf dist/$(TAG)/
