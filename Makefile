@@ -13,7 +13,7 @@ build:
 	cd oojs-ui && npx grunt build
 
 after:
-	bash after.sh $(TAG)
+	bash after.sh
 
 copy:
 	rm -rf dist/$(TAG)/
@@ -27,4 +27,4 @@ copy:
 check-diff:
 	bash check-diff.sh
 
-all: setup create convert build copy after
+all: setup create convert build after copy
