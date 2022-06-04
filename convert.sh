@@ -23,7 +23,6 @@ cp oojs-ui/node_modules/wikimedia-ui-base/wikimedia-ui-base.less $base/variables
 sed -Ei 's|^@([^:]+):(\s*)[^;]*;|@\1:\2var( --\1 );|g' $base/variables.less
 # Undo some variables used in calculations.
 sed -Ei 's|^@(min-size-base):(\s*).*;|@\1:\2/* no var */ 32px;|g' $base/variables.less
-sed -Ei 's|^@(min-size-icon):(\s*).*;|@\1:\2/* no var */ 20px;|g' $base/variables.less
 
 
 ##
@@ -32,6 +31,7 @@ sed -Ei 's|^@(min-size-icon):(\s*).*;|@\1:\2/* no var */ 20px;|g' $base/variable
 
 # Replace import
 sed -Ei "s|'.*wikimedia-ui-base.less'|'variables.less'|g" $base/common.less
+sed -Ei "s|unit\( @min-size-icon \)|20|g" $base/common.less
 
 
 ##
