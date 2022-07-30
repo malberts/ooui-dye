@@ -6,7 +6,7 @@
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T21:12:45Z
+ * Date: 2022-07-30T01:59:24Z
  */
 .oo-ui-element-hidden {
   display: none !important;
@@ -406,9 +406,9 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  min-width: calc(20 / 14 * var(--font-size-base));
+  min-width: var(--min-size-icon);
   width: 1.42857143em;
-  min-height: calc(20 / 14 * var(--font-size-base));
+  min-height: var(--min-size-icon);
   height: 100%;
 }
 .oo-ui-iconElement-noIcon {
@@ -2162,7 +2162,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T21:12:45Z
+ * Date: 2022-07-30T01:59:24Z
  */
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ),
 .oo-ui-draggableElement-handle:not( .oo-ui-draggableElement-undraggable ).oo-ui-widget {
@@ -3173,7 +3173,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T21:12:45Z
+ * Date: 2022-07-30T01:59:24Z
  */
 .oo-ui-tool {
 }
@@ -3846,7 +3846,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T21:12:45Z
+ * Date: 2022-07-30T01:59:24Z
  */
 
 .oo-ui-window {
@@ -4272,7 +4272,7 @@ body:not( :-moz-handler-blocked ) .oo-ui-fieldsetLayout {
  * Released under the MIT license
  * http://oojs.mit-license.org
  *
- * Date: 2022-06-04T21:12:45Z
+ * Date: 2022-07-30T01:59:24Z
  */
 .oo-ui-icon-arrowNext {
   background-image: /* @embed */ url(themes/dye/images/icons/arrowNext-ltr.svg);
